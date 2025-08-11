@@ -1,0 +1,66 @@
+\documentclass[aspectratio=169]{beamer}
+\usetheme{Berkeley}
+\usepackage[utf8]{inputenc}
+\usepackage[T5]{fontenc}
+\usepackage[vietnamese]{babel}
+\usecolortheme{seahorse}
+
+% Alternative font setup for better Vietnamese support
+\usepackage{lmodern}
+
+
+% Fix for hyperref and Vietnamese characters
+\usepackage{hyperref}
+\hypersetup{
+    unicode=true,
+    pdfencoding=auto,
+    pdftitle={Ap dung toi uu song nuoc cho cac bai toan toi uu to hop},
+    pdfauthor={Hoang Bao An, Phan Tien Dat},
+    colorlinks=true,
+    linkcolor=blue,
+    citecolor=blue,
+    urlcolor=blue
+}
+% Add this after loading hyperref
+\usepackage{bookmark}
+\bookmarksetup{
+  numbered,
+  open
+}
+
+%Information to be included in the title page:
+\title{Áp dụng tối ưu sóng nước cho các bài toán tối ưu tổ hợp}
+\author{Hoàng Bảo An, Phan Tiến Đạt}
+\institute{Đại học Công Nghệ, ĐHQGHN}
+\date{2025}
+
+\beamertemplatenavigationsymbolsempty % Remove bottom navigation bar
+\begin{document}
+\logo{\includegraphics[width=1cm]{images/Logo_HUET.svg.png}}
+\frame{\titlepage}
+
+\section{Tổng quan}
+\include{sections/1-overview}
+
+\section{Các kỹ thuật áp dụng cho tối ưu tổ hợp}
+\include{sections/2-techniques}
+
+\section{Áp dụng vào SO-MKP}
+\include{sections/3-mknaps}
+
+\section{Áp dụng trong classic knapsack}
+\include{sections/4-classicknap}
+
+\section{Tổng kết}
+\include{sections/5-conclusion}
+
+
+% Bibliography section
+\section{Tài liệu tham khảo}
+\begin{frame}[allowframebreaks]
+    \frametitle{Tài liệu tham khảo}
+    \bibliographystyle{plain}
+    \bibliography{refs}
+\end{frame}
+
+\end{document}

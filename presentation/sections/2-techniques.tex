@@ -1,0 +1,57 @@
+\begin{frame}
+    \frametitle{Các bước áp dụng vào trong bài toán tối ưu tổ hợp}
+    Để áp dụng được WWO vào trong bài toán tối ưu tổ hợp, sẽ có 4 bước để rời rạc hóa các thuật toán, cụ thể như sau:
+    \begin{itemize}
+        \item Xác định biểu diễn của lời giải và cấu trúc lân cận của các lời giải để sử dụng local search
+        \item Xác định toán tử \hyperlink{frame:propagation}{lan truyền}
+        \item Xác định cách tính toán bước sóng sử dụng trong bước \hyperlink{frame:propagation}{lan truyền}
+        \item Điều chỉnh lại thuật toán để thích nghi với các khía cạnh khác của thuật toán tối ưu rời rạc
+    \end{itemize}
+\end{frame}
+
+
+\begin{frame}
+    \frametitle{Xác định toán tử lan truyền}
+    \begin{block}{Biến đổi $\mathbf{x}$ với xác suất tỷ lệ thuận với bước sóng $\lambda_{\mathbf{x}}$}
+        Ví dụ với bài toán TSP: Lời giải hiện tại là $\mathbf{x} = \{x_1, ... x_n\}$
+Với mỗi $i$ từ $1$ đến $n$, với xác suất $\lambda_{x}$, đảo ngược một dãy con $\{x_i, ..., x_{i + l}\}$ trong đó $l$ là một số ngẫu nhiên nằm giữa $[1, n - i]$. Trong trường hợp này, $\lambda_\mathbf{x}$ phải là một số thực nằm giữa $[0, 1]$.
+    \end{block}
+    \begin{block}{Biến đổi $\mathbf{x}$ bằng cách thực hiện $k$ bước tìm kiếm cục bộ}
+        Với bài toán TSP, ta có thể thực hiện $k$ lần hoán đổi hai thành phố ngẫu nhiên, với $k$ là một số nguyên ngẫu nhiên trong khoảng $[1, \lambda_\mathbf{x}]$. Trong trường hợp này, $\lambda_\mathbf{x}$ phải là một số nguyên nằm trong khoảng $[1, n]$.
+    \end{block}
+\end{frame}
+
+
+\begin{frame}
+    \frametitle{Xác định cách tính toán bước sóng mới}
+    \begin{block}{Đặt $\lambda_{\mathbf{x}}$ tỉ lệ nghịch với độ tốt của lời giải $f(\mathbf{x})$:}
+        Có hai dạng điển hình được sử dụng. Gọi $\mathbf{P}$ là quần thể nghiệm, $\lambda_{max}$ và $\lambda_{min}$ lần lượt là bước sóng cho phép lớn nhất và nhỏ nhất.
+        \begin{equation}
+            \label{eq:e3}
+            \lambda_{\mathbf{x}}=\lambda_{max}\frac{(\sum_{\mathbf{x'}\in\mathbf{P}}f(\mathbf{x}'))-f(\mathbf{x})}{\sum_{\mathbf{x'}\in\mathbf{P}}f(\mathbf{x}')}
+        \end{equation}
+        và
+        \begin{equation}
+            \label{eq:e4}
+            \lambda_{\mathbf{x}} = \lambda_{min} + ({\lambda_{max} - \lambda_{min})\frac{f_{max} - f(\mathbf{x}) + \epsilon}{f_{max} - f_{min} + \epsilon}}
+        \end{equation}
+    \end{block}
+\end{frame}
+
+\begin{frame}
+    \frametitle{Xác định cách tính toán bước sóng mới}
+    \begin{block}{Đặt $\lambda_{\mathbf{x}}$ tỉ lệ nghịch với $f(\mathbf{x})$ dựa trên mô hình hàm mũ.}
+        \begin{equation}
+            \label{eq:e5}
+            \lambda_{\mathbf{x}} = \lambda_{min} \cdot b^{\alpha \cdot (f_{max} - f_(x) + \epsilon)/(f_{max} - f_{min} + \epsilon)}
+        \end{equation}
+        trong đó $b$ và $\alpha$ là hai tham số điều khiển. Để thuận tiện, $\alpha$ thường được đặt bằng $1$, sau đó $b$ được điều chỉnh theo $\lambda_{max} / \lambda_{min}$.
+    \end{block}
+    \begin{block}{Cập nhật $\lambda_{\mathbf{x}}$ theo chiều nghịch đảo với sự thay đổi của $f(\mathbf{x})$}
+        \begin{equation}
+            \label{eq:e7}
+            \lambda_{\mathbf{x'}} = min(\lambda_{\mathbf{x}} + \alpha \frac{f(\mathbf{x}) - f(\mathbf{x'})}{f_{max}}, \lambda_{max})
+        \end{equation}
+        Ngoài các giá trị tốt nhất/tệ nhất của toàn quẩn thể trong một thế hệ, ta có thể theo dõi các giá trị tốt nhất/tệ nhất của một lời giải qua các thế hệ khác nhau.
+    \end{block}
+\end{frame}

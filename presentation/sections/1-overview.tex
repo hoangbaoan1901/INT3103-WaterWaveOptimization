@@ -1,0 +1,53 @@
+\begin{frame}
+    \frametitle{Tổng quan về WWO}
+    WWO là một kỹ thuật metaheuristic được phát triển dựa trên quan sát các sóng nước tự nhiên. Kỹ thuật này được liệt kê vào mục trí tuệ bầy đàn tự nhiên (Natural swarm-based) \cite{hussain2019metaheuristic}
+    
+    \begin{itemize}
+        \item Được giới thiệu lần đầu bởi Yu-Jun Zheng và các cộng sự vào năm 2015 \cite{zheng2015water}
+        \item Mô phỏng hành vi lan truyền của sóng nước
+        \item Ban đầu được áp dụng vào các bài toán tối ưu liên tục, nhưng sau đó được sự quan tâm và chú ý trong việc áp dụng với các bài toán tối ưu tổ hợp
+        \item Năm 2019, các tác giả đã tổng hợp một số kỹ thuật và đánh giá WWO trong các bài toán tối ưu tổ hợp \cite{zheng2019water}
+    \end{itemize}
+\end{frame}
+
+\begin{frame}
+    \frametitle{WWO trong không gian liên tục}
+    Mỗi lời giải $\mathbf{x}$ trong quần thể là một gợn sóng. Hàm mục tiêu đánh giá lời giải đó càng tốt thì bước sóng $\lambda_{\mathbf{x}}$ càng nhỏ (tương đương với việc năng lượng càng lớn, bước sóng càng nhỏ).
+    Thuật toán bao gồm các toán tử cơ bản sau:
+    \begin{itemize}
+        \item Lan truyền
+        \item Khúc xạ
+        \item Vỡ sóng
+    \end{itemize}
+\end{frame}
+
+\begin{frame}
+    \frametitle{Lan truyền}
+    \label{frame:propagation}
+    Trong không gian liên tục, chiều thứ $d$ của một lời giải $x$ sẽ được cập nhật như sau
+    % $$
+    % \mathbf{x}'(d) = \mathbf{x}(d) + \lambda_\mathbf{x} \cdot rand(-1, 1) \cdot L(d)$$
+    \begin{equation}
+        \label{eq:e1}
+            \mathbf{x}'(d) = \mathbf{x}(d) + \lambda_\mathbf{x} \cdot rand(-1, 1) \cdot L(d)
+    \end{equation}
+    Trong đó:
+    \begin{itemize}
+        \item $rand$ là hàm ngẫu nhiên với phân bố đều
+        \item $L(d)$ là khoảng tìm kiếm của chiều thứ $d$
+    \end{itemize}
+    Bước sóng của tất cả lời giải $\lambda_{\mathbf{x}}$ được khởi tạo bằng 0.5, sau đó sẽ được điều chỉnh dựa trên độ tốt của lời giải đó $f(\mathbf{x})$ qua các thế hệ. 
+    \begin{equation}
+        \label{eq:e2}
+        \lambda_\mathbf{x} = \lambda_\mathbf{x}\cdot\alpha^{-(f(x) - f_{min} + \epsilon)/(f_{max} - f_{min} + \epsilon)}
+    \end{equation}
+    Trong đó $f_{max}$ và $f_{min}$ là giá trí của lời giải tốt nhất và tệ nhất trong quần thể ở thế hệ hiện tại, $\alpha$ là hệ số suy giảm bước sóng (được đề xuất là 1.0026)\cite{zheng2019water}.
+\end{frame}
+
+\begin{frame}
+    \frametitle{Khúc xạ và vỡ sóng}
+    \begin{itemize}
+        \item Khúc xạ: Nếu một gợn sóng (một lời giải) không được cải thiện qua một vài thế hệ thì sẽ bị loại bỏ, một lời giải mới - được tạo bằng cách lấy một điểm ngẫu nhiên nằm giữa lời giải cũ và lời giải tốt nhất $\mathbf{x^*}$ - sẽ thay thế lời giải cũ.
+        \item Vỡ sóng: Khi một lời giải tốt nhất $\mathbf{x^*}$ được tìm thấy, nó sẽ được lưu lại, sau đó vỡ ra thành các lời giải con khác bằng cách di chuyển một khoảng nhỏ so với $\mathbf{x^*}$ theo chiều ngẫu nhiên. Thực chất là ta sẽ áp dụng các kỹ thuật tìm kiếm cục bộ (local search) trong bước này.
+    \end{itemize}
+\end{frame}

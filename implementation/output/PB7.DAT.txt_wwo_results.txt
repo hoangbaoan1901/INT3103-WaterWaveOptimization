@@ -1,0 +1,52 @@
+WWO Results for PB7.DAT.txt
+==================================================
+Problem size: 30 knapsacks, 37 objects
+Known optimum: 1035
+Best fitness found: 1035.00
+Gap: 0.00%
+Feasible: True
+
+Best solution:
+[1, 1, 1, 1, 1, 0, 0, 0, 1, 0, 1, 0, 1, 1, 1, 1, 1, 0, 0, 1, 1, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 1, 0]
+
+Fitness history:
+Generation 0: 1022.00
+Generation 50: 1022.00
+Generation 100: 1022.00
+Generation 150: 1022.00
+Generation 200: 1033.00
+Generation 250: 1033.00
+Generation 300: 1033.00
+Generation 350: 1033.00
+Generation 400: 1033.00
+Generation 450: 1035.00
+Generation 500: 1035.00
+Generation 550: 1035.00
+Generation 600: 1035.00
+Generation 650: 1035.00
+Generation 700: 1035.00
+Generation 750: 1035.00
+Generation 800: 1035.00
+Generation 850: 1035.00
+Generation 900: 1035.00
+Generation 950: 1035.00
+Generation 1000: 1035.00
+Generation 1050: 1035.00
+Generation 1100: 1035.00
+Generation 1150: 1035.00
+Generation 1200: 1035.00
+Generation 1250: 1035.00
+Generation 1300: 1035.00
+Generation 1350: 1035.00
+Generation 1400: 1035.00
+Generation 1450: 1035.00
+Generation 1500: 1035.00
+Generation 1550: 1035.00
+Generation 1600: 1035.00
+Generation 1650: 1035.00
+Generation 1700: 1035.00
+Generation 1750: 1035.00
+Generation 1800: 1035.00
+Generation 1850: 1035.00
+Generation 1900: 1035.00
+Generation 1950: 1035.00

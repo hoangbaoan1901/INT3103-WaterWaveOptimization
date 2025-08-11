@@ -1,0 +1,52 @@
+WWO Results for HP2.DAT.txt
+==================================================
+Problem size: 4 knapsacks, 35 objects
+Known optimum: 3186
+Best fitness found: 3186.00
+Gap: 0.00%
+Feasible: True
+
+Best solution:
+[0, 0, 1, 0, 1, 1, 0, 1, 1, 0, 0, 1, 1, 0, 0, 1, 0, 1, 1, 1, 1, 1, 0, 1, 0, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1]
+
+Fitness history:
+Generation 0: 2829.00
+Generation 50: 3099.00
+Generation 100: 3099.00
+Generation 150: 3099.00
+Generation 200: 3102.00
+Generation 250: 3128.00
+Generation 300: 3158.00
+Generation 350: 3158.00
+Generation 400: 3158.00
+Generation 450: 3158.00
+Generation 500: 3158.00
+Generation 550: 3158.00
+Generation 600: 3158.00
+Generation 650: 3159.00
+Generation 700: 3159.00
+Generation 750: 3159.00
+Generation 800: 3159.00
+Generation 850: 3159.00
+Generation 900: 3159.00
+Generation 950: 3159.00
+Generation 1000: 3159.00
+Generation 1050: 3159.00
+Generation 1100: 3159.00
+Generation 1150: 3159.00
+Generation 1200: 3159.00
+Generation 1250: 3159.00
+Generation 1300: 3159.00
+Generation 1350: 3169.00
+Generation 1400: 3169.00
+Generation 1450: 3169.00
+Generation 1500: 3169.00
+Generation 1550: 3170.00
+Generation 1600: 3173.00
+Generation 1650: 3173.00
+Generation 1700: 3173.00
+Generation 1750: 3173.00
+Generation 1800: 3173.00
+Generation 1850: 3173.00
+Generation 1900: 3173.00
+Generation 1950: 3173.00

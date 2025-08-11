@@ -1,0 +1,52 @@
+WWO Results for PB6.DAT.txt
+==================================================
+Problem size: 30 knapsacks, 40 objects
+Known optimum: 776
+Best fitness found: 776.00
+Gap: 0.00%
+Feasible: True
+
+Best solution:
+[0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 1, 0, 1, 1, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1]
+
+Fitness history:
+Generation 0: 726.00
+Generation 50: 739.00
+Generation 100: 762.00
+Generation 150: 776.00
+Generation 200: 776.00
+Generation 250: 776.00
+Generation 300: 776.00
+Generation 350: 776.00
+Generation 400: 776.00
+Generation 450: 776.00
+Generation 500: 776.00
+Generation 550: 776.00
+Generation 600: 776.00
+Generation 650: 776.00
+Generation 700: 776.00
+Generation 750: 776.00
+Generation 800: 776.00
+Generation 850: 776.00
+Generation 900: 776.00
+Generation 950: 776.00
+Generation 1000: 776.00
+Generation 1050: 776.00
+Generation 1100: 776.00
+Generation 1150: 776.00
+Generation 1200: 776.00
+Generation 1250: 776.00
+Generation 1300: 776.00
+Generation 1350: 776.00
+Generation 1400: 776.00
+Generation 1450: 776.00
+Generation 1500: 776.00
+Generation 1550: 776.00
+Generation 1600: 776.00
+Generation 1650: 776.00
+Generation 1700: 776.00
+Generation 1750: 776.00
+Generation 1800: 776.00
+Generation 1850: 776.00
+Generation 1900: 776.00
+Generation 1950: 776.00

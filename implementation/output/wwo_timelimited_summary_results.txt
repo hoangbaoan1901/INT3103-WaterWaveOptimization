@@ -1,0 +1,59 @@
+WWO Time-Limited Algorithm Results Summary
+==================================================
+Time Limit: 5.0 seconds per instance
+
+Instance             Best       Optimum    Gap%     Feasible Time   Gen  
+--------------------------------------------------------------------------------
+HP1.DAT.txt          3388       3418       0.88     Yes      5.00   4074 
+HP2.DAT.txt          3173       3186       0.41     Yes      5.00   3038 
+PB1.DAT.txt          3090       3090       0.00     Yes      5.00   4577 
+PB2.DAT.txt          3156       3186       0.94     Yes      5.00   3294 
+PB4.DAT.txt          91935      95168      3.40     Yes      5.00   4982 
+PB5.DAT.txt          2139       2139       0.00     Yes      5.00   3022 
+PB6.DAT.txt          776        776        0.00     Yes      5.00   416  
+PB7.DAT.txt          1014       1035       2.03     Yes      5.00   420  
+SENTO1.DAT.txt       7719       7772       0.68     Yes      5.00   269  
+SENTO2.DAT.txt       8709       8722       0.15     Yes      5.00   257  
+WEING1.DAT.txt       141278     141278     0.00     Yes      5.00   5986 
+WEING2.DAT.txt       130883     130883     0.00     Yes      5.00   5352 
+WEING3.DAT.txt       95677      95677      0.00     Yes      5.00   4951 
+WEING4.DAT.txt       119337     119337     0.00     Yes      5.00   5507 
+WEING5.DAT.txt       98796      98796      0.00     Yes      5.00   4478 
+WEING6.DAT.txt       130623     130623     0.00     Yes      5.00   5477 
+WEING7.DAT.txt       1094142    1095445    0.12     Yes      5.00   2708 
+WEING8.DAT.txt       623092     624319     0.20     Yes      5.00   1285 
+WEISH01.DAT.txt      4554       4554       0.00     Yes      5.00   3260 
+WEISH02.DAT.txt      4531       4536       0.11     Yes      5.00   3022 
+WEISH03.DAT.txt      4115       4115       0.00     Yes      5.00   2386 
+WEISH04.DAT.txt      4561       4561       0.00     Yes      5.00   3103 
+WEISH05.DAT.txt      4514       4514       0.00     Yes      5.00   2923 
+WEISH06.DAT.txt      5557       5557       0.00     Yes      5.00   2174 
+WEISH07.DAT.txt      5567       5567       0.00     Yes      5.00   2141 
+WEISH08.DAT.txt      5603       5605       0.04     Yes      5.00   2064 
+WEISH09.DAT.txt      5246       5246       0.00     Yes      5.00   1830 
+WEISH10.DAT.txt      6339       6339       0.00     Yes      5.00   1305 
+WEISH11.DAT.txt      5643       5643       0.00     Yes      5.00   1137 
+WEISH12.DAT.txt      6339       6339       0.00     Yes      5.00   1295 
+WEISH13.DAT.txt      6159       6159       0.00     Yes      5.00   1248 
+WEISH14.DAT.txt      6870       6954       1.21     Yes      5.00   1062 
+WEISH15.DAT.txt      7417       7486       0.92     Yes      5.00   1417 
+WEISH16.DAT.txt      7221       7289       0.93     Yes      5.00   1258 
+WEISH17.DAT.txt      8605       8633       0.32     Yes      5.00   1608 
+WEISH18.DAT.txt      9481       9580       1.03     Yes      5.00   1279 
+WEISH19.DAT.txt      7698       7698       0.00     Yes      5.00   791  
+WEISH20.DAT.txt      9383       9450       0.71     Yes      5.00   1280 
+WEISH21.DAT.txt      9001       9074       0.80     Yes      5.00   1098 
+WEISH22.DAT.txt      8886       8947       0.68     Yes      5.00   750  
+WEISH23.DAT.txt      8200       8344       1.73     Yes      5.00   707  
+WEISH24.DAT.txt      10134      10220      0.84     Yes      5.00   1089 
+WEISH25.DAT.txt      9847       9939       0.93     Yes      5.00   1045 
+WEISH26.DAT.txt      9314       9584       2.82     Yes      5.00   673  
+WEISH27.DAT.txt      9437       9819       3.89     Yes      5.00   697  
+WEISH28.DAT.txt      9272       9492       2.32     Yes      5.00   646  
+WEISH29.DAT.txt      9197       9410       2.26     Yes      5.00   654  
+WEISH30.DAT.txt      11056      11191      1.21     Yes      5.00   1051 
+--------------------------------------------------------------------------------
+Average Gap: 0.66%
+Feasible Solutions: 48/48
+Average Time: 5.000s
+Average Generations: 2189.3
