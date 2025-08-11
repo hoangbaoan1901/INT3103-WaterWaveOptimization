@@ -1,0 +1,52 @@
+WWO Results for SENTO1.DAT.txt
+==================================================
+Problem size: 30 knapsacks, 60 objects
+Known optimum: 7772
+Best fitness found: 7772.00
+Gap: 0.00%
+Feasible: True
+
+Best solution:
+[0, 1, 0, 0, 1, 0, 0, 1, 1, 0, 1, 0, 1, 1, 0, 1, 0, 1, 1, 0, 1, 0, 0, 0, 1, 0, 1, 0, 0, 1, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 1, 0, 0, 1, 0, 0, 1, 0]
+
+Fitness history:
+Generation 0: 7719.00
+Generation 50: 7719.00
+Generation 100: 7719.00
+Generation 150: 7739.00
+Generation 200: 7739.00
+Generation 250: 7772.00
+Generation 300: 7772.00
+Generation 350: 7772.00
+Generation 400: 7772.00
+Generation 450: 7772.00
+Generation 500: 7772.00
+Generation 550: 7772.00
+Generation 600: 7772.00
+Generation 650: 7772.00
+Generation 700: 7772.00
+Generation 750: 7772.00
+Generation 800: 7772.00
+Generation 850: 7772.00
+Generation 900: 7772.00
+Generation 950: 7772.00
+Generation 1000: 7772.00
+Generation 1050: 7772.00
+Generation 1100: 7772.00
+Generation 1150: 7772.00
+Generation 1200: 7772.00
+Generation 1250: 7772.00
+Generation 1300: 7772.00
+Generation 1350: 7772.00
+Generation 1400: 7772.00
+Generation 1450: 7772.00
+Generation 1500: 7772.00
+Generation 1550: 7772.00
+Generation 1600: 7772.00
+Generation 1650: 7772.00
+Generation 1700: 7772.00
+Generation 1750: 7772.00
+Generation 1800: 7772.00
+Generation 1850: 7772.00
+Generation 1900: 7772.00
+Generation 1950: 7772.00

@@ -31,7 +31,7 @@ class MKPInstance:
         self.n_knapsacks = int(first_line[0])
         self.n_objects = int(first_line[1])
         
-        # Parse weights
+        # Parse weights (called weights, but actually means values)
         weight_lines = []
         line_idx = 1
         while line_idx < len(lines) and len(weight_lines) < self.n_objects:
@@ -79,10 +79,10 @@ class WWOSolution:
         self.wavelength = 0.5  # Initial wavelength
     
     def generate_random_solution(self) -> List[int]:
-        """Generate a random feasible solution"""
+        """Generate a random feasible solution (with shuffled greedy aspect)"""
         solution = [0] * self.instance.n_objects
         
-        # Greedy approach with profit density: add items in order of profit/weight ratio
+        # Greedy approach with profit density: add items in order of weight/constraint ratio
         profit_density = [(i, self.instance.weights[i] / sum(self.instance.constraints[k][i] for k in range(self.instance.n_knapsacks))) 
                          for i in range(self.instance.n_objects)]
         profit_density.sort(key=lambda x: x[1], reverse=True)
@@ -168,7 +168,7 @@ class WWOSolution:
         return new_solution
     
     def propagate(self) -> 'WWOSolution':
-        """Propagate solution using S2 strategy (k-step local search)"""
+        """Propagate solution using S2 strategy (k-step local search, bit reversal)"""
         new_solution = self.copy()
         
         # Determine number of changes based on wavelength
@@ -187,7 +187,7 @@ class WWOSolution:
         return new_solution
     
     def local_search_breaking(self, n_b: int) -> List['WWOSolution']:
-        """Generate neighbors using breaking operator (S6)"""
+        """Generate k neighbors using breaking operator (S6), kth neighbor is alternated by removing kth least profit instance removed"""
         neighbors = []
         
         for k in range(1, min(n_b + 1, self.instance.n_objects + 1)):
@@ -372,7 +372,7 @@ def run_experiments():
     
     results = []
     
-    for filename in test_files[:10]:  # Test on first 10 instances
+    for filename in test_files:
         print(f"\n{'='*60}")
         print(f"Testing on {filename}")
         print(f"{'='*60}")
@@ -384,7 +384,7 @@ def run_experiments():
         # Run WWO
         wwo = WWOAlgorithm(instance, 
                           np_max=100, np_min=20, 
-                          max_generations=2000)
+                          max_generations=500)
         
         best_solution, fitness_history = wwo.run()
         
@@ -415,8 +415,8 @@ def run_experiments():
             f.write(f"\nBest solution:\n")
             f.write(f"{best_solution.solution}\n")
             f.write(f"\nFitness history:\n")
-            for i, fitness in enumerate(fitness_history[::50]):  # Every 50th generation
-                f.write(f"Generation {i*50}: {fitness:.2f}\n")
+            for i, fitness in enumerate(fitness_history):
+                f.write(f"Generation no.{i}: {fitness:.2f}\n")
     
     # Save summary results
     summary_file = os.path.join(output_path, "wwo_summary_results.txt")

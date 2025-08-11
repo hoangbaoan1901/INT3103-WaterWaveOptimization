@@ -1,5 +1,5 @@
 \documentclass[aspectratio=169]{beamer}
-\usetheme{Berkeley}
+\usetheme{Copenhagen}
 \usepackage[utf8]{inputenc}
 \usepackage[T5]{fontenc}
 \usepackage[vietnamese]{babel}
@@ -34,9 +34,22 @@
 \institute{Đại học Công Nghệ, ĐHQGHN}
 \date{2025}
 
-\beamertemplatenavigationsymbolsempty % Remove bottom navigation bar
+% Remove bottom navigation bar
+\beamertemplatenavigationsymbolsempty 
+
+% Remove 
+\setbeamertemplate{headline}{}
+
+% Add ToC on section transition
+\AtBeginSection[]
+{
+  \begin{frame}<beamer> % <beamer> option prevents this frame from appearing in the ToC
+  \frametitle{Mục lục}
+  \tableofcontents[currentsection] % Shows ToC, highlighting the current section
+  \end{frame}
+}
 \begin{document}
-\logo{\includegraphics[width=1cm]{images/Logo_HUET.svg.png}}
+\logo{\includegraphics[width=0.5cm]{images/Logo_HUET.svg.png}}
 \frame{\titlepage}
 
 \section{Tổng quan}

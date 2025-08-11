@@ -25,7 +25,7 @@ Với mỗi $i$ từ $1$ đến $n$, với xác suất $\lambda_{x}$, đảo ng�
 \begin{frame}
     \frametitle{Xác định cách tính toán bước sóng mới}
     \begin{block}{Đặt $\lambda_{\mathbf{x}}$ tỉ lệ nghịch với độ tốt của lời giải $f(\mathbf{x})$:}
-        Có hai dạng điển hình được sử dụng. Gọi $\mathbf{P}$ là quần thể nghiệm, $\lambda_{max}$ và $\lambda_{min}$ lần lượt là bước sóng cho phép lớn nhất và nhỏ nhất.
+        Có hai dạng điển hình được sử dụng. Gọi $\mathbf{P}$ là quần thể các lời giải, $\lambda_{max}$ và $\lambda_{min}$ lần lượt là bước sóng cho phép lớn nhất và nhỏ nhất.
         \begin{equation}
             \label{eq:e3}
             \lambda_{\mathbf{x}}=\lambda_{max}\frac{(\sum_{\mathbf{x'}\in\mathbf{P}}f(\mathbf{x}'))-f(\mathbf{x})}{\sum_{\mathbf{x'}\in\mathbf{P}}f(\mathbf{x}')}
@@ -53,5 +53,26 @@ Với mỗi $i$ từ $1$ đến $n$, với xác suất $\lambda_{x}$, đảo ng�
             \lambda_{\mathbf{x'}} = min(\lambda_{\mathbf{x}} + \alpha \frac{f(\mathbf{x}) - f(\mathbf{x'})}{f_{max}}, \lambda_{max})
         \end{equation}
         Ngoài các giá trị tốt nhất/tệ nhất của toàn quẩn thể trong một thế hệ, ta có thể theo dõi các giá trị tốt nhất/tệ nhất của một lời giải qua các thế hệ khác nhau.
+    \end{block}
+\end{frame}
+
+\begin{frame}
+    \frametitle{Thích nghi với các khía cạnh khác của thuật toán tối ưu rời rạc}
+    \begin{block}{Toán tử vỡ sóng}
+        Đặt $n_b$ là một siêu tham số. Khi ta tìm được một lời giải tốt nhất, ta sẽ thực hiện local search để tạo ra $n_b$ lời giải mới dựa trên lời giải cũ.
+
+        Ở bước vỡ sóng, tác giả đề xuất thực hiện các kỹ thuật local search sâu hơn. Khác với bước lan truyền, bước vỡ sóng sẽ tập trung vào khía cạnh khai thacs (intesification/exploitation), còn bước lan truyền nên cân bằng cả hai yếu tố khai thác và đa dạng (diversification/exploration).
+    \end{block}
+\end{frame}
+
+
+\begin{frame}
+    \frametitle{Thích nghi với các khía cạnh khác của thuật toán tối ưu rời rạc}
+    \begin{block}{Cập nhật quần thể trong bước lan truyền}
+        Khi cập nhật quần thể, một số kỹ thuật sau thường được áp dụng:
+        \begin{itemize}
+            \item Thay thế một lời giải $\mathbf{x}$ bằng lời giải lan truyền $\mathbf{x'}$ chỉ khi $\mathbf{x'}$ tốt hơn.
+            \item Thay thế một lời giải $\mathbf{x}$ bằng lời giải lan truyền $\mathbf{x'}$ chỉ khi $\mathbf{x'}$ tốt hơn, hoặc $exp((f(\mathbf{x'} - f(\mathbf{x}))/T))$ lớn hơn một siêu tham số.
+        \end{itemize}
     \end{block}
 \end{frame}

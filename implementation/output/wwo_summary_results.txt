@@ -2,16 +2,54 @@ WWO-MKP Summary Results
 ======================================================================
 Instance             Known Opt    Best Found   Gap %    Feasible  
 ----------------------------------------------------------------------
-HP1.DAT.txt          3418         3404.00      0.41     1         
-HP2.DAT.txt          3186         3186.00      0.00     1         
+HP1.DAT.txt          3418         3384.00      0.99     1         
+HP2.DAT.txt          3186         3159.00      0.85     1         
 PB1.DAT.txt          3090         3090.00      0.00     1         
-PB2.DAT.txt          3186         3186.00      0.00     1         
+PB2.DAT.txt          3186         3167.00      0.60     1         
 PB4.DAT.txt          95168        91935.00     3.40     1         
-PB5.DAT.txt          2139         2139.00      0.00     1         
+PB5.DAT.txt          2139         2122.00      0.79     1         
 PB6.DAT.txt          776          776.00       0.00     1         
 PB7.DAT.txt          1035         1035.00      0.00     1         
 SENTO1.DAT.txt       7772         7772.00      0.00     1         
 SENTO2.DAT.txt       8722         8711.00      0.13     1         
+WEING1.DAT.txt       141278       141278.00    0.00     1         
+WEING2.DAT.txt       130883       130883.00    0.00     1         
+WEING3.DAT.txt       95677        95677.00     0.00     1         
+WEING4.DAT.txt       119337       119337.00    0.00     1         
+WEING5.DAT.txt       98796        98796.00     0.00     1         
+WEING6.DAT.txt       130623       130623.00    0.00     1         
+WEING7.DAT.txt       1095445      1094736.00   0.06     1         
+WEING8.DAT.txt       624319       624116.00    0.03     1         
+WEISH01.DAT.txt      4554         4554.00      0.00     1         
+WEISH02.DAT.txt      4536         4536.00      0.00     1         
+WEISH03.DAT.txt      4115         4115.00      0.00     1         
+WEISH04.DAT.txt      4561         4561.00      0.00     1         
+WEISH05.DAT.txt      4514         4514.00      0.00     1         
+WEISH06.DAT.txt      5557         5534.00      0.41     1         
+WEISH07.DAT.txt      5567         5567.00      0.00     1         
+WEISH08.DAT.txt      5605         5603.00      0.04     1         
+WEISH09.DAT.txt      5246         5246.00      0.00     1         
+WEISH10.DAT.txt      6339         6339.00      0.00     1         
+WEISH11.DAT.txt      5643         5643.00      0.00     1         
+WEISH12.DAT.txt      6339         6339.00      0.00     1         
+WEISH13.DAT.txt      6159         6159.00      0.00     1         
+WEISH14.DAT.txt      6954         6954.00      0.00     1         
+WEISH15.DAT.txt      7486         7486.00      0.00     1         
+WEISH16.DAT.txt      7289         7281.00      0.11     1         
+WEISH17.DAT.txt      8633         8575.00      0.67     1         
+WEISH18.DAT.txt      9580         9532.00      0.50     1         
+WEISH19.DAT.txt      7698         7641.00      0.74     1         
+WEISH20.DAT.txt      9450         9410.00      0.42     1         
+WEISH21.DAT.txt      9074         9074.00      0.00     1         
+WEISH22.DAT.txt      8947         8888.00      0.66     1         
+WEISH23.DAT.txt      8344         8260.00      1.01     1         
+WEISH24.DAT.txt      10220        10023.00     1.93     1         
+WEISH25.DAT.txt      9939         9806.00      1.34     1         
+WEISH26.DAT.txt      9584         9395.00      1.97     1         
+WEISH27.DAT.txt      9819         9605.00      2.18     1         
+WEISH28.DAT.txt      9492         9390.00      1.07     1         
+WEISH29.DAT.txt      9410         9410.00      0.00     1         
+WEISH30.DAT.txt      11191        10956.00     2.10     1         
 ----------------------------------------------------------------------
-Average gap: 0.39%
-Feasible solutions: 10/10
+Average gap: 0.46%
+Feasible solutions: 48/48

@@ -1,0 +1,52 @@
+WWO Results for PB5.DAT.txt
+==================================================
+Problem size: 10 knapsacks, 20 objects
+Known optimum: 2139
+Best fitness found: 2139.00
+Gap: 0.00%
+Feasible: True
+
+Best solution:
+[0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1]
+
+Fitness history:
+Generation 0: 1979.00
+Generation 50: 2085.00
+Generation 100: 2085.00
+Generation 150: 2102.00
+Generation 200: 2122.00
+Generation 250: 2122.00
+Generation 300: 2122.00
+Generation 350: 2122.00
+Generation 400: 2122.00
+Generation 450: 2122.00
+Generation 500: 2122.00
+Generation 550: 2122.00
+Generation 600: 2122.00
+Generation 650: 2122.00
+Generation 700: 2122.00
+Generation 750: 2122.00
+Generation 800: 2122.00
+Generation 850: 2122.00
+Generation 900: 2139.00
+Generation 950: 2139.00
+Generation 1000: 2139.00
+Generation 1050: 2139.00
+Generation 1100: 2139.00
+Generation 1150: 2139.00
+Generation 1200: 2139.00
+Generation 1250: 2139.00
+Generation 1300: 2139.00
+Generation 1350: 2139.00
+Generation 1400: 2139.00
+Generation 1450: 2139.00
+Generation 1500: 2139.00
+Generation 1550: 2139.00
+Generation 1600: 2139.00
+Generation 1650: 2139.00
+Generation 1700: 2139.00
+Generation 1750: 2139.00
+Generation 1800: 2139.00
+Generation 1850: 2139.00
+Generation 1900: 2139.00
+Generation 1950: 2139.00
