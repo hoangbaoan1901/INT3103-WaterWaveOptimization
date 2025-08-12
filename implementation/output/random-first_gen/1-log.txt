@@ -1,0 +1,932 @@
+
+============================================================
+Testing on HP1.DAT.txt
+============================================================
+Starting WWO for /home/hoangbaoan/repos/INT3103-WaterWaveOptimization/dataset/mknap2-decomposed/HP1.DAT.txt
+Problem size: 4 knapsacks, 28 objects
+Known optimum: 3418
+Generation 0: Best = 3348.00 (Feasible), Pop size = 100
+Generation 88: New best fitness = 3384.00
+Generation 100: Best = 3384.00 (Feasible), Pop size = 84
+Generation 200: Best = 3384.00 (Feasible), Pop size = 68
+Generation 300: Best = 3384.00 (Feasible), Pop size = 52
+Generation 315: New best fitness = 3388.00
+Generation 400: Best = 3388.00 (Feasible), Pop size = 36
+WWO completed in 5.73 seconds
+Final best fitness: 3388.00
+Known optimum: 3418
+Gap: 0.88%
+
+============================================================
+Testing on HP2.DAT.txt
+============================================================
+Starting WWO for /home/hoangbaoan/repos/INT3103-WaterWaveOptimization/dataset/mknap2-decomposed/HP2.DAT.txt
+Problem size: 4 knapsacks, 35 objects
+Known optimum: 3186
+Generation 0: Best = 3056.00 (Feasible), Pop size = 100
+Generation 53: New best fitness = 3109.00
+Generation 100: Best = 3109.00 (Feasible), Pop size = 84
+Generation 127: New best fitness = 3150.00
+Generation 200: Best = 3150.00 (Feasible), Pop size = 68
+Generation 300: Best = 3150.00 (Feasible), Pop size = 52
+Generation 400: Best = 3150.00 (Feasible), Pop size = 36
+WWO completed in 6.86 seconds
+Final best fitness: 3150.00
+Known optimum: 3186
+Gap: 1.13%
+
+============================================================
+Testing on PB1.DAT.txt
+============================================================
+Starting WWO for /home/hoangbaoan/repos/INT3103-WaterWaveOptimization/dataset/mknap2-decomposed/PB1.DAT.txt
+Problem size: 4 knapsacks, 27 objects
+Known optimum: 3090
+Generation 0: Best = 3008.00 (Feasible), Pop size = 100
+Generation 29: New best fitness = 3060.00
+Generation 100: Best = 3060.00 (Feasible), Pop size = 84
+Generation 200: Best = 3060.00 (Feasible), Pop size = 68
+Generation 272: New best fitness = 3077.00
+Generation 300: Best = 3077.00 (Feasible), Pop size = 52
+Generation 400: Best = 3077.00 (Feasible), Pop size = 36
+WWO completed in 4.87 seconds
+Final best fitness: 3077.00
+Known optimum: 3090
+Gap: 0.42%
+
+============================================================
+Testing on PB2.DAT.txt
+============================================================
+Starting WWO for /home/hoangbaoan/repos/INT3103-WaterWaveOptimization/dataset/mknap2-decomposed/PB2.DAT.txt
+Problem size: 4 knapsacks, 34 objects
+Known optimum: 3186
+Generation 0: Best = 3078.00 (Feasible), Pop size = 100
+Generation 81: New best fitness = 3124.00
+Generation 100: Best = 3124.00 (Feasible), Pop size = 84
+Generation 200: Best = 3124.00 (Feasible), Pop size = 68
+Generation 300: Best = 3124.00 (Feasible), Pop size = 52
+Generation 400: Best = 3124.00 (Feasible), Pop size = 36
+Generation 475: New best fitness = 3158.00
+WWO completed in 6.30 seconds
+Final best fitness: 3158.00
+Known optimum: 3186
+Gap: 0.88%
+
+============================================================
+Testing on PB4.DAT.txt
+============================================================
+Starting WWO for /home/hoangbaoan/repos/INT3103-WaterWaveOptimization/dataset/mknap2-decomposed/PB4.DAT.txt
+Problem size: 2 knapsacks, 29 objects
+Known optimum: 95168
+Generation 0: New best fitness = 91935.00
+Generation 0: Best = 91935.00 (Feasible), Pop size = 100
+Generation 39: New best fitness = 95168.00
+Generation 100: Best = 95168.00 (Feasible), Pop size = 84
+Generation 200: Best = 95168.00 (Feasible), Pop size = 68
+Generation 300: Best = 95168.00 (Feasible), Pop size = 52
+Generation 400: Best = 95168.00 (Feasible), Pop size = 36
+WWO completed in 4.23 seconds
+Final best fitness: 95168.00
+Known optimum: 95168
+Gap: 0.00%
+
+============================================================
+Testing on PB5.DAT.txt
+============================================================
+Starting WWO for /home/hoangbaoan/repos/INT3103-WaterWaveOptimization/dataset/mknap2-decomposed/PB5.DAT.txt
+Problem size: 10 knapsacks, 20 objects
+Known optimum: 2139
+Generation 0: Best = 2025.00 (Feasible), Pop size = 100
+Generation 3: New best fitness = 2051.00
+Generation 8: New best fitness = 2102.00
+Generation 22: New best fitness = 2122.00
+Generation 31: New best fitness = 2139.00
+Generation 100: Best = 2139.00 (Feasible), Pop size = 84
+Generation 200: Best = 2139.00 (Feasible), Pop size = 68
+Generation 300: Best = 2139.00 (Feasible), Pop size = 52
+Generation 400: Best = 2139.00 (Feasible), Pop size = 36
+WWO completed in 7.21 seconds
+Final best fitness: 2139.00
+Known optimum: 2139
+Gap: 0.00%
+
+============================================================
+Testing on PB6.DAT.txt
+============================================================
+Starting WWO for /home/hoangbaoan/repos/INT3103-WaterWaveOptimization/dataset/mknap2-decomposed/PB6.DAT.txt
+Problem size: 30 knapsacks, 40 objects
+Known optimum: 776
+Generation 0: Best = 648.00 (Feasible), Pop size = 100
+Generation 2: New best fitness = 716.00
+Generation 11: New best fitness = 776.00
+Generation 100: Best = 776.00 (Feasible), Pop size = 84
+Generation 200: Best = 776.00 (Feasible), Pop size = 68
+Generation 300: Best = 776.00 (Feasible), Pop size = 52
+Generation 400: Best = 776.00 (Feasible), Pop size = 36
+WWO completed in 50.77 seconds
+Final best fitness: 776.00
+Known optimum: 776
+Gap: 0.00%
+
+============================================================
+Testing on PB7.DAT.txt
+============================================================
+Starting WWO for /home/hoangbaoan/repos/INT3103-WaterWaveOptimization/dataset/mknap2-decomposed/PB7.DAT.txt
+Problem size: 30 knapsacks, 37 objects
+Known optimum: 1035
+Generation 0: New best fitness = 966.00
+Generation 0: Best = 966.00 (Feasible), Pop size = 100
+Generation 16: New best fitness = 978.00
+Generation 25: New best fitness = 986.00
+Generation 33: New best fitness = 1005.00
+Generation 39: New best fitness = 1015.00
+Generation 63: New best fitness = 1028.00
+Generation 100: Best = 1028.00 (Feasible), Pop size = 84
+Generation 119: New best fitness = 1033.00
+Generation 200: Best = 1033.00 (Feasible), Pop size = 68
+Generation 202: New best fitness = 1034.00
+Generation 300: Best = 1034.00 (Feasible), Pop size = 52
+Generation 328: New best fitness = 1035.00
+Generation 400: Best = 1035.00 (Feasible), Pop size = 36
+WWO completed in 47.82 seconds
+Final best fitness: 1035.00
+Known optimum: 1035
+Gap: 0.00%
+
+============================================================
+Testing on SENTO1.DAT.txt
+============================================================
+Starting WWO for /home/hoangbaoan/repos/INT3103-WaterWaveOptimization/dataset/mknap2-decomposed/SENTO1.DAT.txt
+Problem size: 30 knapsacks, 60 objects
+Known optimum: 7772
+Generation 0: New best fitness = 6741.00
+Generation 0: Best = 6741.00 (Feasible), Pop size = 100
+Generation 1: New best fitness = 7399.00
+Generation 16: New best fitness = 7719.00
+Generation 100: Best = 7719.00 (Feasible), Pop size = 84
+Generation 108: New best fitness = 7772.00
+Generation 200: Best = 7772.00 (Feasible), Pop size = 68
+Generation 300: Best = 7772.00 (Feasible), Pop size = 52
+Generation 400: Best = 7772.00 (Feasible), Pop size = 36
+WWO completed in 73.94 seconds
+Final best fitness: 7772.00
+Known optimum: 7772
+Gap: 0.00%
+
+============================================================
+Testing on SENTO2.DAT.txt
+============================================================
+Starting WWO for /home/hoangbaoan/repos/INT3103-WaterWaveOptimization/dataset/mknap2-decomposed/SENTO2.DAT.txt
+Problem size: 30 knapsacks, 60 objects
+Known optimum: 8722
+Generation 0: New best fitness = 8270.00
+Generation 0: Best = 8270.00 (Feasible), Pop size = 100
+Generation 8: New best fitness = 8527.00
+Generation 32: New best fitness = 8667.00
+Generation 100: Best = 8667.00 (Feasible), Pop size = 84
+Generation 128: New best fitness = 8709.00
+Generation 200: Best = 8709.00 (Feasible), Pop size = 68
+Generation 300: Best = 8709.00 (Feasible), Pop size = 52
+Generation 400: Best = 8709.00 (Feasible), Pop size = 36
+WWO completed in 66.84 seconds
+Final best fitness: 8709.00
+Known optimum: 8722
+Gap: 0.15%
+
+============================================================
+Testing on WEING1.DAT.txt
+============================================================
+Starting WWO for /home/hoangbaoan/repos/INT3103-WaterWaveOptimization/dataset/mknap2-decomposed/WEING1.DAT.txt
+Problem size: 2 knapsacks, 28 objects
+Known optimum: 141278
+Generation 0: New best fitness = 140458.00
+Generation 0: Best = 140458.00 (Feasible), Pop size = 100
+Generation 21: New best fitness = 141278.00
+Generation 100: Best = 141278.00 (Feasible), Pop size = 84
+Generation 200: Best = 141278.00 (Feasible), Pop size = 68
+Generation 300: Best = 141278.00 (Feasible), Pop size = 52
+Generation 400: Best = 141278.00 (Feasible), Pop size = 36
+WWO completed in 3.32 seconds
+Final best fitness: 141278.00
+Known optimum: 141278
+Gap: 0.00%
+
+============================================================
+Testing on WEING2.DAT.txt
+============================================================
+Starting WWO for /home/hoangbaoan/repos/INT3103-WaterWaveOptimization/dataset/mknap2-decomposed/WEING2.DAT.txt
+Problem size: 2 knapsacks, 28 objects
+Known optimum: 130883
+Generation 0: New best fitness = 119025.00
+Generation 0: New best fitness = 123679.00
+Generation 0: Best = 123679.00 (Feasible), Pop size = 100
+Generation 2: New best fitness = 129403.00
+Generation 12: New best fitness = 130883.00
+Generation 100: Best = 130883.00 (Feasible), Pop size = 84
+Generation 200: Best = 130883.00 (Feasible), Pop size = 68
+Generation 300: Best = 130883.00 (Feasible), Pop size = 52
+Generation 400: Best = 130883.00 (Feasible), Pop size = 36
+WWO completed in 3.81 seconds
+Final best fitness: 130883.00
+Known optimum: 130883
+Gap: 0.00%
+
+============================================================
+Testing on WEING3.DAT.txt
+============================================================
+Starting WWO for /home/hoangbaoan/repos/INT3103-WaterWaveOptimization/dataset/mknap2-decomposed/WEING3.DAT.txt
+Problem size: 2 knapsacks, 28 objects
+Known optimum: 95677
+Generation 0: New best fitness = 95677.00
+Generation 0: Best = 95677.00 (Feasible), Pop size = 100
+Generation 100: Best = 95677.00 (Feasible), Pop size = 84
+Generation 200: Best = 95677.00 (Feasible), Pop size = 68
+Generation 300: Best = 95677.00 (Feasible), Pop size = 52
+Generation 400: Best = 95677.00 (Feasible), Pop size = 36
+WWO completed in 4.39 seconds
+Final best fitness: 95677.00
+Known optimum: 95677
+Gap: 0.00%
+
+============================================================
+Testing on WEING4.DAT.txt
+============================================================
+Starting WWO for /home/hoangbaoan/repos/INT3103-WaterWaveOptimization/dataset/mknap2-decomposed/WEING4.DAT.txt
+Problem size: 2 knapsacks, 28 objects
+Known optimum: 119337
+Generation 0: New best fitness = 119337.00
+Generation 0: Best = 119337.00 (Feasible), Pop size = 100
+Generation 100: Best = 119337.00 (Feasible), Pop size = 84
+Generation 200: Best = 119337.00 (Feasible), Pop size = 68
+Generation 300: Best = 119337.00 (Feasible), Pop size = 52
+Generation 400: Best = 119337.00 (Feasible), Pop size = 36
+WWO completed in 4.24 seconds
+Final best fitness: 119337.00
+Known optimum: 119337
+Gap: 0.00%
+
+============================================================
+Testing on WEING5.DAT.txt
+============================================================
+Starting WWO for /home/hoangbaoan/repos/INT3103-WaterWaveOptimization/dataset/mknap2-decomposed/WEING5.DAT.txt
+Problem size: 2 knapsacks, 28 objects
+Known optimum: 98796
+Generation 0: New best fitness = 98796.00
+Generation 0: Best = 98796.00 (Feasible), Pop size = 100
+Generation 100: Best = 98796.00 (Feasible), Pop size = 84
+Generation 200: Best = 98796.00 (Feasible), Pop size = 68
+Generation 300: Best = 98796.00 (Feasible), Pop size = 52
+Generation 400: Best = 98796.00 (Feasible), Pop size = 36
+WWO completed in 4.71 seconds
+Final best fitness: 98796.00
+Known optimum: 98796
+Gap: 0.00%
+
+============================================================
+Testing on WEING6.DAT.txt
+============================================================
+Starting WWO for /home/hoangbaoan/repos/INT3103-WaterWaveOptimization/dataset/mknap2-decomposed/WEING6.DAT.txt
+Problem size: 2 knapsacks, 28 objects
+Known optimum: 130623
+Generation 0: New best fitness = 124150.00
+Generation 0: Best = 124150.00 (Feasible), Pop size = 100
+Generation 4: New best fitness = 130233.00
+Generation 94: New best fitness = 130623.00
+Generation 100: Best = 130623.00 (Feasible), Pop size = 84
+Generation 200: Best = 130623.00 (Feasible), Pop size = 68
+Generation 300: Best = 130623.00 (Feasible), Pop size = 52
+Generation 400: Best = 130623.00 (Feasible), Pop size = 36
+WWO completed in 3.73 seconds
+Final best fitness: 130623.00
+Known optimum: 130623
+Gap: 0.00%
+
+============================================================
+Testing on WEING7.DAT.txt
+============================================================
+Starting WWO for /home/hoangbaoan/repos/INT3103-WaterWaveOptimization/dataset/mknap2-decomposed/WEING7.DAT.txt
+Problem size: 2 knapsacks, 105 objects
+Known optimum: 1095445
+Generation 0: Best = 1054138.00 (Feasible), Pop size = 100
+Generation 7: New best fitness = 1071357.00
+Generation 100: Best = 1071357.00 (Feasible), Pop size = 84
+Generation 168: New best fitness = 1084895.00
+Generation 200: Best = 1084895.00 (Feasible), Pop size = 68
+Generation 300: Best = 1084895.00 (Feasible), Pop size = 52
+Generation 400: Best = 1084895.00 (Feasible), Pop size = 36
+WWO completed in 6.75 seconds
+Final best fitness: 1084895.00
+Known optimum: 1095445
+Gap: 0.96%
+
+============================================================
+Testing on WEING8.DAT.txt
+============================================================
+Starting WWO for /home/hoangbaoan/repos/INT3103-WaterWaveOptimization/dataset/mknap2-decomposed/WEING8.DAT.txt
+Problem size: 2 knapsacks, 105 objects
+Known optimum: 624319
+Generation 0: New best fitness = 492883.00
+Generation 0: Best = 492883.00 (Feasible), Pop size = 100
+Generation 4: New best fitness = 609699.00
+Generation 96: New best fitness = 624319.00
+Generation 100: Best = 624319.00 (Feasible), Pop size = 84
+Generation 200: Best = 624319.00 (Feasible), Pop size = 68
+Generation 300: Best = 624319.00 (Feasible), Pop size = 52
+Generation 400: Best = 624319.00 (Feasible), Pop size = 36
+WWO completed in 24.10 seconds
+Final best fitness: 624319.00
+Known optimum: 624319
+Gap: 0.00%
+
+============================================================
+Testing on WEISH01.DAT.txt
+============================================================
+Starting WWO for /home/hoangbaoan/repos/INT3103-WaterWaveOptimization/dataset/mknap2-decomposed/WEISH01.DAT.txt
+Problem size: 5 knapsacks, 30 objects
+Known optimum: 4554
+Generation 0: New best fitness = 4372.00
+Generation 0: Best = 4372.00 (Feasible), Pop size = 100
+Generation 8: New best fitness = 4441.00
+Generation 17: New best fitness = 4554.00
+Generation 100: Best = 4554.00 (Feasible), Pop size = 84
+Generation 200: Best = 4554.00 (Feasible), Pop size = 68
+Generation 300: Best = 4554.00 (Feasible), Pop size = 52
+Generation 400: Best = 4554.00 (Feasible), Pop size = 36
+WWO completed in 6.47 seconds
+Final best fitness: 4554.00
+Known optimum: 4554
+Gap: 0.00%
+
+============================================================
+Testing on WEISH02.DAT.txt
+============================================================
+Starting WWO for /home/hoangbaoan/repos/INT3103-WaterWaveOptimization/dataset/mknap2-decomposed/WEISH02.DAT.txt
+Problem size: 5 knapsacks, 30 objects
+Known optimum: 4536
+Generation 0: Best = 4317.00 (Feasible), Pop size = 100
+Generation 4: New best fitness = 4413.00
+Generation 10: New best fitness = 4504.00
+Generation 30: New best fitness = 4531.00
+Generation 59: New best fitness = 4536.00
+Generation 100: Best = 4536.00 (Feasible), Pop size = 84
+Generation 200: Best = 4536.00 (Feasible), Pop size = 68
+Generation 300: Best = 4536.00 (Feasible), Pop size = 52
+Generation 400: Best = 4536.00 (Feasible), Pop size = 36
+WWO completed in 6.72 seconds
+Final best fitness: 4536.00
+Known optimum: 4536
+Gap: 0.00%
+
+============================================================
+Testing on WEISH03.DAT.txt
+============================================================
+Starting WWO for /home/hoangbaoan/repos/INT3103-WaterWaveOptimization/dataset/mknap2-decomposed/WEISH03.DAT.txt
+Problem size: 5 knapsacks, 30 objects
+Known optimum: 4115
+Generation 0: New best fitness = 4115.00
+Generation 0: Best = 4115.00 (Feasible), Pop size = 100
+Generation 100: Best = 4115.00 (Feasible), Pop size = 84
+Generation 200: Best = 4115.00 (Feasible), Pop size = 68
+Generation 300: Best = 4115.00 (Feasible), Pop size = 52
+Generation 400: Best = 4115.00 (Feasible), Pop size = 36
+WWO completed in 8.67 seconds
+Final best fitness: 4115.00
+Known optimum: 4115
+Gap: 0.00%
+
+============================================================
+Testing on WEISH04.DAT.txt
+============================================================
+Starting WWO for /home/hoangbaoan/repos/INT3103-WaterWaveOptimization/dataset/mknap2-decomposed/WEISH04.DAT.txt
+Problem size: 5 knapsacks, 30 objects
+Known optimum: 4561
+Generation 0: New best fitness = 4527.00
+Generation 0: Best = 4527.00 (Feasible), Pop size = 100
+Generation 19: New best fitness = 4561.00
+Generation 100: Best = 4561.00 (Feasible), Pop size = 84
+Generation 200: Best = 4561.00 (Feasible), Pop size = 68
+Generation 300: Best = 4561.00 (Feasible), Pop size = 52
+Generation 400: Best = 4561.00 (Feasible), Pop size = 36
+WWO completed in 6.92 seconds
+Final best fitness: 4561.00
+Known optimum: 4561
+Gap: 0.00%
+
+============================================================
+Testing on WEISH05.DAT.txt
+============================================================
+Starting WWO for /home/hoangbaoan/repos/INT3103-WaterWaveOptimization/dataset/mknap2-decomposed/WEISH05.DAT.txt
+Problem size: 5 knapsacks, 30 objects
+Known optimum: 4514
+Generation 0: Best = 3458.00 (Feasible), Pop size = 100
+Generation 1: New best fitness = 4514.00
+Generation 100: Best = 4514.00 (Feasible), Pop size = 84
+Generation 200: Best = 4514.00 (Feasible), Pop size = 68
+Generation 300: Best = 4514.00 (Feasible), Pop size = 52
+Generation 400: Best = 4514.00 (Feasible), Pop size = 36
+WWO completed in 7.09 seconds
+Final best fitness: 4514.00
+Known optimum: 4514
+Gap: 0.00%
+
+============================================================
+Testing on WEISH06.DAT.txt
+============================================================
+Starting WWO for /home/hoangbaoan/repos/INT3103-WaterWaveOptimization/dataset/mknap2-decomposed/WEISH06.DAT.txt
+Problem size: 5 knapsacks, 40 objects
+Known optimum: 5557
+Generation 0: Best = 5097.00 (Feasible), Pop size = 100
+Generation 3: New best fitness = 5334.00
+Generation 13: New best fitness = 5451.00
+Generation 34: New best fitness = 5506.00
+Generation 68: New best fitness = 5542.00
+Generation 100: Best = 5542.00 (Feasible), Pop size = 84
+Generation 200: Best = 5542.00 (Feasible), Pop size = 68
+Generation 300: Best = 5542.00 (Feasible), Pop size = 52
+Generation 312: New best fitness = 5544.00
+Generation 400: Best = 5544.00 (Feasible), Pop size = 36
+WWO completed in 9.15 seconds
+Final best fitness: 5544.00
+Known optimum: 5557
+Gap: 0.23%
+
+============================================================
+Testing on WEISH07.DAT.txt
+============================================================
+Starting WWO for /home/hoangbaoan/repos/INT3103-WaterWaveOptimization/dataset/mknap2-decomposed/WEISH07.DAT.txt
+Problem size: 5 knapsacks, 40 objects
+Known optimum: 5567
+Generation 0: New best fitness = 5099.00
+Generation 0: Best = 5099.00 (Feasible), Pop size = 100
+Generation 7: New best fitness = 5271.00
+Generation 15: New best fitness = 5413.00
+Generation 52: New best fitness = 5451.00
+Generation 71: New best fitness = 5483.00
+Generation 94: New best fitness = 5489.00
+Generation 98: New best fitness = 5567.00
+Generation 100: Best = 5567.00 (Feasible), Pop size = 84
+Generation 200: Best = 5567.00 (Feasible), Pop size = 68
+Generation 300: Best = 5567.00 (Feasible), Pop size = 52
+Generation 400: Best = 5567.00 (Feasible), Pop size = 36
+WWO completed in 9.29 seconds
+Final best fitness: 5567.00
+Known optimum: 5567
+Gap: 0.00%
+
+============================================================
+Testing on WEISH08.DAT.txt
+============================================================
+Starting WWO for /home/hoangbaoan/repos/INT3103-WaterWaveOptimization/dataset/mknap2-decomposed/WEISH08.DAT.txt
+Problem size: 5 knapsacks, 40 objects
+Known optimum: 5605
+Generation 0: New best fitness = 5407.00
+Generation 0: Best = 5407.00 (Feasible), Pop size = 100
+Generation 18: New best fitness = 5559.00
+Generation 100: Best = 5559.00 (Feasible), Pop size = 84
+Generation 200: Best = 5559.00 (Feasible), Pop size = 68
+Generation 243: New best fitness = 5603.00
+Generation 300: Best = 5603.00 (Feasible), Pop size = 52
+Generation 353: New best fitness = 5605.00
+Generation 400: Best = 5605.00 (Feasible), Pop size = 36
+WWO completed in 9.10 seconds
+Final best fitness: 5605.00
+Known optimum: 5605
+Gap: 0.00%
+
+============================================================
+Testing on WEISH09.DAT.txt
+============================================================
+Starting WWO for /home/hoangbaoan/repos/INT3103-WaterWaveOptimization/dataset/mknap2-decomposed/WEISH09.DAT.txt
+Problem size: 5 knapsacks, 40 objects
+Known optimum: 5246
+Generation 0: Best = 4138.00 (Feasible), Pop size = 100
+Generation 2: New best fitness = 4866.00
+Generation 9: New best fitness = 5148.00
+Generation 36: New best fitness = 5212.00
+Generation 100: Best = 5212.00 (Feasible), Pop size = 84
+Generation 138: New best fitness = 5246.00
+Generation 200: Best = 5246.00 (Feasible), Pop size = 68
+Generation 300: Best = 5246.00 (Feasible), Pop size = 52
+Generation 400: Best = 5246.00 (Feasible), Pop size = 36
+WWO completed in 11.20 seconds
+Final best fitness: 5246.00
+Known optimum: 5246
+Gap: 0.00%
+
+============================================================
+Testing on WEISH10.DAT.txt
+============================================================
+Starting WWO for /home/hoangbaoan/repos/INT3103-WaterWaveOptimization/dataset/mknap2-decomposed/WEISH10.DAT.txt
+Problem size: 5 knapsacks, 50 objects
+Known optimum: 6339
+Generation 0: New best fitness = 5889.00
+Generation 0: Best = 5889.00 (Feasible), Pop size = 100
+Generation 24: New best fitness = 6280.00
+Generation 100: Best = 6280.00 (Feasible), Pop size = 84
+Generation 151: New best fitness = 6339.00
+Generation 200: Best = 6339.00 (Feasible), Pop size = 68
+Generation 300: Best = 6339.00 (Feasible), Pop size = 52
+Generation 400: Best = 6339.00 (Feasible), Pop size = 36
+WWO completed in 16.39 seconds
+Final best fitness: 6339.00
+Known optimum: 6339
+Gap: 0.00%
+
+============================================================
+Testing on WEISH11.DAT.txt
+============================================================
+Starting WWO for /home/hoangbaoan/repos/INT3103-WaterWaveOptimization/dataset/mknap2-decomposed/WEISH11.DAT.txt
+Problem size: 5 knapsacks, 50 objects
+Known optimum: 5643
+Generation 0: New best fitness = 4709.00
+Generation 0: Best = 4709.00 (Feasible), Pop size = 100
+Generation 3: New best fitness = 5621.00
+Generation 100: Best = 5621.00 (Feasible), Pop size = 84
+Generation 154: New best fitness = 5643.00
+Generation 200: Best = 5643.00 (Feasible), Pop size = 68
+Generation 300: Best = 5643.00 (Feasible), Pop size = 52
+Generation 400: Best = 5643.00 (Feasible), Pop size = 36
+WWO completed in 18.94 seconds
+Final best fitness: 5643.00
+Known optimum: 5643
+Gap: 0.00%
+
+============================================================
+Testing on WEISH12.DAT.txt
+============================================================
+Starting WWO for /home/hoangbaoan/repos/INT3103-WaterWaveOptimization/dataset/mknap2-decomposed/WEISH12.DAT.txt
+Problem size: 5 knapsacks, 50 objects
+Known optimum: 6339
+Generation 0: New best fitness = 5150.00
+Generation 0: Best = 5150.00 (Feasible), Pop size = 100
+Generation 3: New best fitness = 6089.00
+Generation 36: New best fitness = 6224.00
+Generation 69: New best fitness = 6285.00
+Generation 100: Best = 6285.00 (Feasible), Pop size = 84
+Generation 132: New best fitness = 6339.00
+Generation 200: Best = 6339.00 (Feasible), Pop size = 68
+Generation 300: Best = 6339.00 (Feasible), Pop size = 52
+Generation 400: Best = 6339.00 (Feasible), Pop size = 36
+WWO completed in 17.01 seconds
+Final best fitness: 6339.00
+Known optimum: 6339
+Gap: 0.00%
+
+============================================================
+Testing on WEISH13.DAT.txt
+============================================================
+Starting WWO for /home/hoangbaoan/repos/INT3103-WaterWaveOptimization/dataset/mknap2-decomposed/WEISH13.DAT.txt
+Problem size: 5 knapsacks, 50 objects
+Known optimum: 6159
+Generation 0: Best = 4557.00 (Feasible), Pop size = 100
+Generation 1: New best fitness = 5741.00
+Generation 22: New best fitness = 6083.00
+Generation 100: Best = 6083.00 (Feasible), Pop size = 84
+Generation 200: Best = 6083.00 (Feasible), Pop size = 68
+Generation 208: New best fitness = 6159.00
+Generation 300: Best = 6159.00 (Feasible), Pop size = 52
+Generation 400: Best = 6159.00 (Feasible), Pop size = 36
+WWO completed in 17.68 seconds
+Final best fitness: 6159.00
+Known optimum: 6159
+Gap: 0.00%
+
+============================================================
+Testing on WEISH14.DAT.txt
+============================================================
+Starting WWO for /home/hoangbaoan/repos/INT3103-WaterWaveOptimization/dataset/mknap2-decomposed/WEISH14.DAT.txt
+Problem size: 5 knapsacks, 60 objects
+Known optimum: 6954
+Generation 0: New best fitness = 5517.00
+Generation 0: Best = 5517.00 (Feasible), Pop size = 100
+Generation 3: New best fitness = 6781.00
+Generation 72: New best fitness = 6866.00
+Generation 100: Best = 6866.00 (Feasible), Pop size = 84
+Generation 200: Best = 6866.00 (Feasible), Pop size = 68
+Generation 238: New best fitness = 6900.00
+Generation 300: Best = 6900.00 (Feasible), Pop size = 52
+Generation 400: Best = 6900.00 (Feasible), Pop size = 36
+WWO completed in 21.89 seconds
+Final best fitness: 6900.00
+Known optimum: 6954
+Gap: 0.78%
+
+============================================================
+Testing on WEISH15.DAT.txt
+============================================================
+Starting WWO for /home/hoangbaoan/repos/INT3103-WaterWaveOptimization/dataset/mknap2-decomposed/WEISH15.DAT.txt
+Problem size: 5 knapsacks, 60 objects
+Known optimum: 7486
+Generation 0: New best fitness = 7389.00
+Generation 0: Best = 7389.00 (Feasible), Pop size = 100
+Generation 100: Best = 7389.00 (Feasible), Pop size = 84
+Generation 143: New best fitness = 7486.00
+Generation 200: Best = 7486.00 (Feasible), Pop size = 68
+Generation 300: Best = 7486.00 (Feasible), Pop size = 52
+Generation 400: Best = 7486.00 (Feasible), Pop size = 36
+WWO completed in 16.71 seconds
+Final best fitness: 7486.00
+Known optimum: 7486
+Gap: 0.00%
+
+============================================================
+Testing on WEISH16.DAT.txt
+============================================================
+Starting WWO for /home/hoangbaoan/repos/INT3103-WaterWaveOptimization/dataset/mknap2-decomposed/WEISH16.DAT.txt
+Problem size: 5 knapsacks, 60 objects
+Known optimum: 7289
+Generation 0: New best fitness = 6941.00
+Generation 0: Best = 6941.00 (Feasible), Pop size = 100
+Generation 46: New best fitness = 7226.00
+Generation 100: Best = 7226.00 (Feasible), Pop size = 84
+Generation 200: Best = 7226.00 (Feasible), Pop size = 68
+Generation 300: Best = 7226.00 (Feasible), Pop size = 52
+Generation 400: Best = 7226.00 (Feasible), Pop size = 36
+Generation 482: New best fitness = 7281.00
+WWO completed in 17.66 seconds
+Final best fitness: 7281.00
+Known optimum: 7289
+Gap: 0.11%
+
+============================================================
+Testing on WEISH17.DAT.txt
+============================================================
+Starting WWO for /home/hoangbaoan/repos/INT3103-WaterWaveOptimization/dataset/mknap2-decomposed/WEISH17.DAT.txt
+Problem size: 5 knapsacks, 60 objects
+Known optimum: 8633
+Generation 0: Best = 6923.00 (Feasible), Pop size = 100
+Generation 1: New best fitness = 8334.00
+Generation 54: New best fitness = 8477.00
+Generation 100: Best = 8477.00 (Feasible), Pop size = 84
+Generation 145: New best fitness = 8575.00
+Generation 200: Best = 8575.00 (Feasible), Pop size = 68
+Generation 300: Best = 8575.00 (Feasible), Pop size = 52
+Generation 400: Best = 8575.00 (Feasible), Pop size = 36
+Generation 464: New best fitness = 8624.00
+WWO completed in 12.92 seconds
+Final best fitness: 8624.00
+Known optimum: 8633
+Gap: 0.10%
+
+============================================================
+Testing on WEISH18.DAT.txt
+============================================================
+Starting WWO for /home/hoangbaoan/repos/INT3103-WaterWaveOptimization/dataset/mknap2-decomposed/WEISH18.DAT.txt
+Problem size: 5 knapsacks, 70 objects
+Known optimum: 9580
+Generation 0: New best fitness = 8904.00
+Generation 0: Best = 8904.00 (Feasible), Pop size = 100
+Generation 42: New best fitness = 9282.00
+Generation 100: Best = 9282.00 (Feasible), Pop size = 84
+Generation 172: New best fitness = 9400.00
+Generation 200: Best = 9400.00 (Feasible), Pop size = 68
+Generation 300: Best = 9400.00 (Feasible), Pop size = 52
+Generation 400: Best = 9400.00 (Feasible), Pop size = 36
+Generation 439: New best fitness = 9495.00
+WWO completed in 15.22 seconds
+Final best fitness: 9495.00
+Known optimum: 9580
+Gap: 0.89%
+
+============================================================
+Testing on WEISH19.DAT.txt
+============================================================
+Starting WWO for /home/hoangbaoan/repos/INT3103-WaterWaveOptimization/dataset/mknap2-decomposed/WEISH19.DAT.txt
+Problem size: 5 knapsacks, 70 objects
+Known optimum: 7698
+Generation 0: Best = 5057.00 (Feasible), Pop size = 100
+Generation 1: New best fitness = 6274.00
+Generation 10: New best fitness = 7510.00
+Generation 100: Best = 7510.00 (Feasible), Pop size = 84
+Generation 200: Best = 7510.00 (Feasible), Pop size = 68
+Generation 290: New best fitness = 7610.00
+Generation 300: Best = 7610.00 (Feasible), Pop size = 52
+Generation 400: Best = 7610.00 (Feasible), Pop size = 36
+WWO completed in 28.16 seconds
+Final best fitness: 7610.00
+Known optimum: 7698
+Gap: 1.14%
+
+============================================================
+Testing on WEISH20.DAT.txt
+============================================================
+Starting WWO for /home/hoangbaoan/repos/INT3103-WaterWaveOptimization/dataset/mknap2-decomposed/WEISH20.DAT.txt
+Problem size: 5 knapsacks, 70 objects
+Known optimum: 9450
+Generation 0: Best = 6742.00 (Feasible), Pop size = 100
+Generation 1: New best fitness = 8040.00
+Generation 3: New best fitness = 8640.00
+Generation 19: New best fitness = 8938.00
+Generation 22: New best fitness = 9400.00
+Generation 100: Best = 9400.00 (Feasible), Pop size = 84
+Generation 200: Best = 9400.00 (Feasible), Pop size = 68
+Generation 300: Best = 9400.00 (Feasible), Pop size = 52
+Generation 400: Best = 9400.00 (Feasible), Pop size = 36
+WWO completed in 18.65 seconds
+Final best fitness: 9400.00
+Known optimum: 9450
+Gap: 0.53%
+
+============================================================
+Testing on WEISH21.DAT.txt
+============================================================
+Starting WWO for /home/hoangbaoan/repos/INT3103-WaterWaveOptimization/dataset/mknap2-decomposed/WEISH21.DAT.txt
+Problem size: 5 knapsacks, 70 objects
+Known optimum: 9074
+Generation 0: New best fitness = 8574.00
+Generation 0: Best = 8574.00 (Feasible), Pop size = 100
+Generation 35: New best fitness = 8971.00
+Generation 100: Best = 8971.00 (Feasible), Pop size = 84
+Generation 200: Best = 8971.00 (Feasible), Pop size = 68
+Generation 300: Best = 8971.00 (Feasible), Pop size = 52
+Generation 311: New best fitness = 9018.00
+Generation 400: Best = 9018.00 (Feasible), Pop size = 36
+Generation 408: New best fitness = 9074.00
+WWO completed in 19.56 seconds
+Final best fitness: 9074.00
+Known optimum: 9074
+Gap: 0.00%
+
+============================================================
+Testing on WEISH22.DAT.txt
+============================================================
+Starting WWO for /home/hoangbaoan/repos/INT3103-WaterWaveOptimization/dataset/mknap2-decomposed/WEISH22.DAT.txt
+Problem size: 5 knapsacks, 80 objects
+Known optimum: 8947
+Generation 0: New best fitness = 8374.00
+Generation 0: Best = 8374.00 (Feasible), Pop size = 100
+Generation 90: New best fitness = 8873.00
+Generation 100: Best = 8873.00 (Feasible), Pop size = 84
+Generation 200: Best = 8873.00 (Feasible), Pop size = 68
+Generation 300: Best = 8873.00 (Feasible), Pop size = 52
+Generation 400: Best = 8873.00 (Feasible), Pop size = 36
+WWO completed in 31.22 seconds
+Final best fitness: 8873.00
+Known optimum: 8947
+Gap: 0.83%
+
+============================================================
+Testing on WEISH23.DAT.txt
+============================================================
+Starting WWO for /home/hoangbaoan/repos/INT3103-WaterWaveOptimization/dataset/mknap2-decomposed/WEISH23.DAT.txt
+Problem size: 5 knapsacks, 80 objects
+Known optimum: 8344
+Generation 0: New best fitness = 7364.00
+Generation 0: Best = 7364.00 (Feasible), Pop size = 100
+Generation 27: New best fitness = 8079.00
+Generation 100: Best = 8079.00 (Feasible), Pop size = 84
+Generation 200: Best = 8079.00 (Feasible), Pop size = 68
+Generation 247: New best fitness = 8296.00
+Generation 300: Best = 8296.00 (Feasible), Pop size = 52
+Generation 400: Best = 8296.00 (Feasible), Pop size = 36
+WWO completed in 34.11 seconds
+Final best fitness: 8296.00
+Known optimum: 8344
+Gap: 0.58%
+
+============================================================
+Testing on WEISH24.DAT.txt
+============================================================
+Starting WWO for /home/hoangbaoan/repos/INT3103-WaterWaveOptimization/dataset/mknap2-decomposed/WEISH24.DAT.txt
+Problem size: 5 knapsacks, 80 objects
+Known optimum: 10220
+Generation 0: Best = 8328.00 (Feasible), Pop size = 100
+Generation 6: New best fitness = 9340.00
+Generation 49: New best fitness = 9687.00
+Generation 100: Best = 9687.00 (Feasible), Pop size = 84
+Generation 154: New best fitness = 9919.00
+Generation 200: Best = 9919.00 (Feasible), Pop size = 68
+Generation 300: Best = 9919.00 (Feasible), Pop size = 52
+Generation 400: Best = 9919.00 (Feasible), Pop size = 36
+Generation 486: New best fitness = 10069.00
+WWO completed in 18.12 seconds
+Final best fitness: 10069.00
+Known optimum: 10220
+Gap: 1.48%
+
+============================================================
+Testing on WEISH25.DAT.txt
+============================================================
+Starting WWO for /home/hoangbaoan/repos/INT3103-WaterWaveOptimization/dataset/mknap2-decomposed/WEISH25.DAT.txt
+Problem size: 5 knapsacks, 80 objects
+Known optimum: 9939
+Generation 0: Best = 7350.00 (Feasible), Pop size = 100
+Generation 1: New best fitness = 8813.00
+Generation 11: New best fitness = 9594.00
+Generation 89: New best fitness = 9787.00
+Generation 100: Best = 9787.00 (Feasible), Pop size = 84
+Generation 200: Best = 9787.00 (Feasible), Pop size = 68
+Generation 300: Best = 9787.00 (Feasible), Pop size = 52
+Generation 400: New best fitness = 9889.00
+Generation 400: Best = 9889.00 (Feasible), Pop size = 36
+WWO completed in 22.20 seconds
+Final best fitness: 9889.00
+Known optimum: 9939
+Gap: 0.50%
+
+============================================================
+Testing on WEISH26.DAT.txt
+============================================================
+Starting WWO for /home/hoangbaoan/repos/INT3103-WaterWaveOptimization/dataset/mknap2-decomposed/WEISH26.DAT.txt
+Problem size: 5 knapsacks, 90 objects
+Known optimum: 9584
+Generation 0: New best fitness = 7580.00
+Generation 0: Best = 7580.00 (Feasible), Pop size = 100
+Generation 11: New best fitness = 8719.00
+Generation 59: New best fitness = 9273.00
+Generation 100: Best = 9273.00 (Feasible), Pop size = 84
+Generation 200: Best = 9273.00 (Feasible), Pop size = 68
+Generation 300: Best = 9273.00 (Feasible), Pop size = 52
+Generation 400: Best = 9273.00 (Feasible), Pop size = 36
+Generation 462: New best fitness = 9390.00
+WWO completed in 37.03 seconds
+Final best fitness: 9390.00
+Known optimum: 9584
+Gap: 2.02%
+
+============================================================
+Testing on WEISH27.DAT.txt
+============================================================
+Starting WWO for /home/hoangbaoan/repos/INT3103-WaterWaveOptimization/dataset/mknap2-decomposed/WEISH27.DAT.txt
+Problem size: 5 knapsacks, 90 objects
+Known optimum: 9819
+Generation 0: New best fitness = 7515.00
+Generation 0: Best = 7515.00 (Feasible), Pop size = 100
+Generation 4: New best fitness = 9037.00
+Generation 64: New best fitness = 9572.00
+Generation 100: Best = 9572.00 (Feasible), Pop size = 84
+Generation 200: Best = 9572.00 (Feasible), Pop size = 68
+Generation 300: Best = 9572.00 (Feasible), Pop size = 52
+Generation 400: Best = 9572.00 (Feasible), Pop size = 36
+WWO completed in 36.68 seconds
+Final best fitness: 9572.00
+Known optimum: 9819
+Gap: 2.52%
+
+============================================================
+Testing on WEISH28.DAT.txt
+============================================================
+Starting WWO for /home/hoangbaoan/repos/INT3103-WaterWaveOptimization/dataset/mknap2-decomposed/WEISH28.DAT.txt
+Problem size: 5 knapsacks, 90 objects
+Known optimum: 9492
+Generation 0: New best fitness = 8819.00
+Generation 0: Best = 8819.00 (Feasible), Pop size = 100
+Generation 100: Best = 8819.00 (Feasible), Pop size = 84
+Generation 176: New best fitness = 9158.00
+Generation 200: Best = 9158.00 (Feasible), Pop size = 68
+Generation 300: Best = 9158.00 (Feasible), Pop size = 52
+Generation 392: New best fitness = 9400.00
+Generation 400: Best = 9400.00 (Feasible), Pop size = 36
+WWO completed in 38.93 seconds
+Final best fitness: 9400.00
+Known optimum: 9492
+Gap: 0.97%
+
+============================================================
+Testing on WEISH29.DAT.txt
+============================================================
+Starting WWO for /home/hoangbaoan/repos/INT3103-WaterWaveOptimization/dataset/mknap2-decomposed/WEISH29.DAT.txt
+Problem size: 5 knapsacks, 90 objects
+Known optimum: 9410
+Generation 0: New best fitness = 7528.00
+Generation 0: Best = 7528.00 (Feasible), Pop size = 100
+Generation 6: New best fitness = 8107.00
+Generation 31: New best fitness = 8713.00
+Generation 100: Best = 8713.00 (Feasible), Pop size = 84
+Generation 120: New best fitness = 9183.00
+Generation 200: Best = 9183.00 (Feasible), Pop size = 68
+Generation 300: Best = 9183.00 (Feasible), Pop size = 52
+Generation 352: New best fitness = 9294.00
+Generation 400: Best = 9294.00 (Feasible), Pop size = 36
+WWO completed in 38.96 seconds
+Final best fitness: 9294.00
+Known optimum: 9410
+Gap: 1.23%
+
+============================================================
+Testing on WEISH30.DAT.txt
+============================================================
+Starting WWO for /home/hoangbaoan/repos/INT3103-WaterWaveOptimization/dataset/mknap2-decomposed/WEISH30.DAT.txt
+Problem size: 5 knapsacks, 90 objects
+Known optimum: 11191
+Generation 0: Best = 8326.00 (Feasible), Pop size = 100
+Generation 1: New best fitness = 9096.00
+Generation 8: New best fitness = 9955.00
+Generation 32: New best fitness = 10624.00
+Generation 100: Best = 10624.00 (Feasible), Pop size = 84
+Generation 172: New best fitness = 10959.00
+Generation 200: Best = 10959.00 (Feasible), Pop size = 68
+Generation 294: New best fitness = 11104.00
+Generation 300: Best = 11104.00 (Feasible), Pop size = 52
+Generation 400: Best = 11104.00 (Feasible), Pop size = 36
+WWO completed in 23.73 seconds
+Final best fitness: 11104.00
+Known optimum: 11191
+Gap: 0.78%
+
+============================================================
+SUMMARY
+============================================================
+Tested 48 instances
+Average gap: 0.40%
+Feasible solutions: 48/48
+Results saved to /home/hoangbaoan/repos/INT3103-WaterWaveOptimization/implementation/output/random-first_gen

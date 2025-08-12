@@ -1,0 +1,48 @@
+@startuml classes_wwomkp
+set namespaceSeparator none
+class "MKPInstance" as wwomkp.MKPInstance {
+  capacities : list
+  constraints : list
+  filename : str
+  known_optimum : int
+  n_knapsacks : int
+  n_objects : int
+  weights : list
+  load_instance(filename: str)
+}
+class "WWOAlgorithm" as wwomkp.WWOAlgorithm {
+  best_fitness_history : list
+  best_solution : NoneType
+  current_np : int
+  fitness_history : list
+  generation : int
+  instance
+  lambda_max
+  lambda_min : int
+  max_generations : int
+  n_b : int
+  np_max : int
+  np_min : int
+  population : list
+  calculate_wavelengths()
+  initialize_population()
+  run() -> Tuple[WWOSolution, List[float]]
+  update_population_size()
+}
+class "WWOSolution" as wwomkp.WWOSolution {
+  fitness
+  instance
+  solution
+  wavelength : float
+  calculate_fitness() -> float
+  copy()
+  generate_random_solution() -> List[int]
+  is_feasible() -> bool
+  local_search_breaking(n_b: int) -> List['WWOSolution']
+  propagate() -> 'WWOSolution'
+  repair_solution()
+}
+wwomkp.MKPInstance --o wwomkp.WWOAlgorithm : instance
+wwomkp.MKPInstance --o wwomkp.WWOSolution : instance
+wwomkp.WWOAlgorithm --o wwomkp.WWOSolution : population
+@enduml

@@ -85,14 +85,15 @@ class WWOSolution:
         # Greedy approach with profit density: add items in order of weight/constraint ratio
         profit_density = [(i, self.instance.weights[i] / sum(self.instance.constraints[k][i] for k in range(self.instance.n_knapsacks))) 
                          for i in range(self.instance.n_objects)]
-        profit_density.sort(key=lambda x: x[1], reverse=True)
+        # profit_density.sort(key=lambda x: x[1], reverse=True)
         
         # Add some randomness by shuffling top candidates
         if len(profit_density) > 10:
-            # Shuffle top 30% of items by profit density
-            top_items = profit_density[:len(profit_density)//3]
-            random.shuffle(top_items)
-            profit_density[:len(profit_density)//3] = top_items
+            # Shuffle top half items by profit density
+            # top_items = profit_density[:len(profit_density)//2]
+            # random.shuffle(top_items)
+            # profit_density[:len(profit_density)//2] = top_items
+            random.shuffle(profit_density)
         
         for item, _ in profit_density:
             # Check if adding this item violates any knapsack constraint
@@ -361,7 +362,7 @@ class WWOAlgorithm:
 def run_experiments():
     """Run WWO on all test instances"""
     dataset_path = "/home/hoangbaoan/repos/INT3103-WaterWaveOptimization/dataset/mknap2-decomposed"
-    output_path = "/home/hoangbaoan/repos/INT3103-WaterWaveOptimization/implementation/output"
+    output_path = "/home/hoangbaoan/repos/INT3103-WaterWaveOptimization/implementation/output/random-first_gen"
     
     # Create output directory if it doesn't exist
     os.makedirs(output_path, exist_ok=True)
