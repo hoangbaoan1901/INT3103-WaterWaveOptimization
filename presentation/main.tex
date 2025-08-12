@@ -43,14 +43,16 @@
 {
   \leavevmode%
   \hbox{%
-  % \begin{beamercolorbox}[wd=.333333\paperwidth,ht=2.25ex,dp=1ex,center]{author in head/foot}%
-  %   \usebeamerfont{author in head/foot}\insertshortauthor
-  % \end{beamercolorbox}%
-  \begin{beamercolorbox}[wd=.4\paperwidth,ht=2.25ex,dp=1ex,center]{title in head/foot}%
+  % Box for the institute (centered)
+  \begin{beamercolorbox}[wd=.4\paperwidth,ht=3.ex,dp=2ex,center]{title in head/foot}%
     \usebeamerfont{title in head/foot}\insertshortinstitute
   \end{beamercolorbox}%
-  \begin{beamercolorbox}[wd=.6\paperwidth,ht=2.25ex,dp=1ex,right]{date in head/foot}%
-    % --- This is the part that adds page numbers ---
+  % Box for the GitHub link (centered)
+  \begin{beamercolorbox}[wd=.5\paperwidth,ht=3.ex,dp=2ex,center]{author in head/foot}%
+    \usebeamerfont{author in head/foot}\hspace*{2ex}\href{https://github.com/hoangbaoan1901/INT3103-WaterWaveOptimization}{github.com/hoangbaoan1901/INT3103-WaterWaveOptimization}
+  \end{beamercolorbox}%
+  % Box for the page number (right-aligned)
+  \begin{beamercolorbox}[wd=.1\paperwidth,ht=3.ex,dp=2ex,right]{date in head/foot}%
     \insertframenumber{} / \inserttotalframenumber\hspace*{2ex} 
   \end{beamercolorbox}}%
   \vskip0pt%
