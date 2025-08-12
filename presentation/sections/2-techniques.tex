@@ -9,12 +9,11 @@
     \end{itemize}
 \end{frame}
 
-
+\subsection{Xác định toán tử lan truyền}
 \begin{frame}
     \frametitle{Xác định toán tử lan truyền}
     \begin{block}{Biến đổi $\mathbf{x}$ với xác suất tỷ lệ thuận với bước sóng $\lambda_{\mathbf{x}}$}
-        Ví dụ với bài toán TSP: Lời giải hiện tại là $\mathbf{x} = \{x_1, ... x_n\}$
-Với mỗi $i$ từ $1$ đến $n$, với xác suất $\lambda_{x}$, đảo ngược một dãy con $\{x_i, ..., x_{i + l}\}$ trong đó $l$ là một số ngẫu nhiên nằm giữa $[1, n - i]$. Trong trường hợp này, $\lambda_\mathbf{x}$ phải là một số thực nằm giữa $[0, 1]$.
+        Ví dụ với bài toán TSP: Gọi lời giải hiện tại là $\mathbf{x} = \{x_1, ... x_n\}$: Với mỗi $i$ từ $1$ đến $n$, với xác suất $\lambda_{x}$, đảo ngược một dãy con $\{x_i, ..., x_{i + l}\}$ trong đó $l$ là một số ngẫu nhiên nằm giữa $[1, n - i]$. Trong trường hợp này, $\lambda_\mathbf{x}$ phải là một số thực nằm giữa $[0, 1]$.
     \end{block}
     \begin{block}{Biến đổi $\mathbf{x}$ bằng cách thực hiện $k$ bước tìm kiếm cục bộ}
         Với bài toán TSP, ta có thể thực hiện $k$ lần hoán đổi hai thành phố ngẫu nhiên, với $k$ là một số nguyên ngẫu nhiên trong khoảng $[1, \lambda_\mathbf{x}]$. Trong trường hợp này, $\lambda_\mathbf{x}$ phải là một số nguyên nằm trong khoảng $[1, n]$.
@@ -22,10 +21,11 @@ Với mỗi $i$ từ $1$ đến $n$, với xác suất $\lambda_{x}$, đảo ng�
 \end{frame}
 
 
+\subsection{Xác định cách tính toán bước sóng mới}
 \begin{frame}
     \frametitle{Xác định cách tính toán bước sóng mới}
     \begin{block}{Đặt $\lambda_{\mathbf{x}}$ tỉ lệ nghịch với độ tốt của lời giải $f(\mathbf{x})$:}
-        Có hai dạng điển hình được sử dụng. Gọi $\mathbf{P}$ là quần thể các lời giải, $\lambda_{max}$ và $\lambda_{min}$ lần lượt là bước sóng cho phép lớn nhất và nhỏ nhất.
+        Có hai dạng điển hình được sử dụng. Gọi $\mathbf{P}$ là quần thể lời giải, $\lambda_{max}$ và $\lambda_{min}$ lần lượt là bước sóng cho phép lớn nhất và nhỏ nhất.
         \begin{equation}
             \label{eq:e3}
             \lambda_{\mathbf{x}}=\lambda_{max}\frac{(\sum_{\mathbf{x'}\in\mathbf{P}}f(\mathbf{x}'))-f(\mathbf{x})}{\sum_{\mathbf{x'}\in\mathbf{P}}f(\mathbf{x}')}
@@ -49,19 +49,21 @@ Với mỗi $i$ từ $1$ đến $n$, với xác suất $\lambda_{x}$, đảo ng�
     \end{block}
     \begin{block}{Cập nhật $\lambda_{\mathbf{x}}$ theo chiều nghịch đảo với sự thay đổi của $f(\mathbf{x})$}
         \begin{equation}
-            \label{eq:e7}
+            \label{eq:e6}
             \lambda_{\mathbf{x'}} = min(\lambda_{\mathbf{x}} + \alpha \frac{f(\mathbf{x}) - f(\mathbf{x'})}{f_{max}}, \lambda_{max})
         \end{equation}
         Ngoài các giá trị tốt nhất/tệ nhất của toàn quẩn thể trong một thế hệ, ta có thể theo dõi các giá trị tốt nhất/tệ nhất của một lời giải qua các thế hệ khác nhau.
     \end{block}
 \end{frame}
 
+
+\subsection{Thích nghi với các khía cạnh khác của thuật toán tối ưu rời rạc}
 \begin{frame}
     \frametitle{Thích nghi với các khía cạnh khác của thuật toán tối ưu rời rạc}
     \begin{block}{Toán tử vỡ sóng}
         Đặt $n_b$ là một siêu tham số. Khi ta tìm được một lời giải tốt nhất, ta sẽ thực hiện local search để tạo ra $n_b$ lời giải mới dựa trên lời giải cũ.
 
-        Ở bước vỡ sóng, tác giả đề xuất thực hiện các kỹ thuật local search sâu hơn. Khác với bước lan truyền, bước vỡ sóng sẽ tập trung vào khía cạnh khai thacs (intesification/exploitation), còn bước lan truyền nên cân bằng cả hai yếu tố khai thác và đa dạng (diversification/exploration).
+        Ở bước vỡ sóng, tác giả đề xuất thực hiện các kỹ thuật local search sâu hơn. Khác với bước lan truyền, bước vỡ sóng sẽ tập trung vào khía cạnh khai thác (intensification/exploitation), còn bước lan truyền nên cân bằng cả hai yếu tố khai thác và khám phá (diversification/exploration).
     \end{block}
 \end{frame}
 
@@ -72,7 +74,8 @@ Với mỗi $i$ từ $1$ đến $n$, với xác suất $\lambda_{x}$, đảo ng�
         Khi cập nhật quần thể, một số kỹ thuật sau thường được áp dụng:
         \begin{itemize}
             \item Thay thế một lời giải $\mathbf{x}$ bằng lời giải lan truyền $\mathbf{x'}$ chỉ khi $\mathbf{x'}$ tốt hơn.
-            \item Thay thế một lời giải $\mathbf{x}$ bằng lời giải lan truyền $\mathbf{x'}$ chỉ khi $\mathbf{x'}$ tốt hơn, hoặc $exp((f(\mathbf{x'} - f(\mathbf{x}))/T))$ lớn hơn một siêu tham số.
+            \item Thay thế một lời giải $\mathbf{x}$ bằng lời giải lan truyền $\mathbf{x'}$ chỉ khi $\mathbf{x'}$ tốt hơn, hoặc $exp((f(\mathbf{x'}) - f(\mathbf{x}))/T))$ lớn hơn một ngưỡng nào đó. Ở đây, $T$ là tham số nhiệt độ, giống trong thuật toán Simulated Annealing. Việc lai giữa WWO và SA được đề xuất trong \cite{wang2017adaptive}
+            \item Thay thế một lời giải $\mathbf{x}$ bằng lời giải lan truyền $\mathbf{x'}$ nếu $\mathbf{x'}$ tốt hơn hoặc $\mathbf{x'}$ có thể cải thiện tính đa dạng của quần thể (khoảng cách giữa $\mathbf{x'}$ và cá thể gần nhất của nó lớn hơn khoảng cách của $\mathbf{x}$).
         \end{itemize}
     \end{block}
 \end{frame}

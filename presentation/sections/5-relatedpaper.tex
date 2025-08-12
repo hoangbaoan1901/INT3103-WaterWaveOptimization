@@ -1,0 +1,145 @@
+\begin{frame}
+    \frametitle{Giới thiệu Paper}
+
+    \textbf{Paper:} \textit{Energy management and power quality improvement of microgrid system through modified water wave optimization} (Energy Reports, 2023) \cite{choudhury2023energy}
+
+    \vspace{0.5em}
+    \textbf{Mục tiêu:}
+    \begin{itemize}
+        \item Quản lý năng lượng (EMS) và cải thiện chất lượng điện năng (PQ) trong microgrid (MG) kết hợp: \textbf{PEM Fuel Cell}, \textbf{Pin Lithium-ion}, \textbf{Supercapacitor}.
+        \item Tối ưu tham số bộ điều khiển PI để:
+        \begin{itemize}
+            \item Nâng cao hiệu suất
+            \item Giảm tiêu thụ nhiên liệu
+            \item Tăng độ ổn định hệ thống
+        \end{itemize}
+    \end{itemize}
+
+    \vspace{0.5em}
+    \textbf{Phương pháp:}
+    \begin{itemize}
+        \item Áp dụng \textbf{Water Wave Optimization (WWO)} để tự động tinh chỉnh tham số PI, đáp ứng tải nhanh, duy trì PQ ổn định
+        \item Ưu điểm WWO: đơn giản, ít tham số, hiệu quả với quần thể nhỏ
+    \end{itemize}
+\end{frame}
+
+\begin{frame}
+    \frametitle{Bài toán Tối ưu}
+
+    \textbf{Mục tiêu:} 
+    \begin{itemize}
+        \item Tối ưu \textbf{6 hệ số PI} cho 3 nguồn: Fuel Cell (FC), Battery (Bat), Supercapacitor (SC)
+        \item Giảm \textbf{tổng tích phân bình phương sai số} điều khiển
+    \end{itemize}
+
+    \vspace{0.5em}
+    \textbf{Biến quyết định:}
+    \[
+    \mathbf{X} = [k_{p,FC}, k_{i,FC}, k_{p,Bat}, k_{i,Bat}, k_{p,SC}, k_{i,SC}]
+    \]
+    \textbf{Hàm mục tiêu:}
+    \begin{align}
+    J_{\text{total}} 
+    &= w_1 \int_{0}^{T} t \cdot \left| P_{\text{FC}}^{\text{ref}}(t) - P_{\text{FC}}(t) \right| dt \nonumber \&\quad + w_2 \int_{0}^{T} t \cdot \left| SOC_{\text{Bat}}^{\text{ref}}(t) - SOC_{\text{Bat}}(t) \right| dt \nonumber \\
+    &\quad + w_3 \int_{0}^{T} t \cdot \left| SOC_{\text{SC}}^{\text{ref}}(t) - SOC_{\text{SC}}(t) \right| dt
+    \end{align}
+    \textbf{Ràng buộc:} giới hạn $k_p,k_i$ ($0 \le k_p \le 10,\; 0 \le k_i \le 1$), SOC an toàn, công suất/duty cycle trong \([0,1]\).
+    
+\end{frame}
+
+
+
+\begin{frame}
+    \frametitle{WWO trong bài báo}
+
+    \textbf{WWO gốc:}
+    \begin{itemize}
+        \item Khởi tạo quần thể sóng $P$, bước sóng $\lambda$, chiều cao sóng $h_{\text{max}}$, hệ số $\alpha$, $\beta$, $k_{\text{max}}$.
+        \item Đánh giá hàm mục tiêu $\to$ tìm nghiệm tốt nhất $x^*$.
+        \item \textbf{Vòng lặp:} 
+        \begin{itemize}
+            \item \textit{Propagation:} tạo nghiệm mới $x'$ quanh $x$.
+            \item Nếu $f(x') > f(x)$: thay thế, có thể thực hiện \textit{Breaking} nếu tốt hơn $x^*$.
+            \item Nếu không: giảm $h$, nếu $h=0$ thì \textit{Refraction} (dịch về gần $x^*$).
+        \end{itemize}
+        \item Cập nhật $\lambda$ và lặp lại tới khi dừng.
+    \end{itemize}
+
+    \textbf{Nhược điểm:}
+    \begin{itemize}
+        \item Mạnh khai thác cục bộ nhưng yếu khám phá toàn cục, dễ mất đa dạng và hội tụ sớm.
+        \item Quần thể cố định, khó cân bằng giữa exploration \& exploitation.
+    \end{itemize}
+    => MWWO thay đổi quy mô quần thể và nhịp bước sóng theo tiến trình tối ưu.
+
+\end{frame}
+
+\begin{frame}{Cải tiến chính của MWWO}
+    \textbf{1) Hệ số ``bước sóng'' thích nghi (adaptive wavelength coefficient)}
+    \begin{itemize}
+        \item \textbf{Vấn đề của WWO gốc:} quy tắc cập nhật bước sóng $\lambda$ dựa vào hệ số $\alpha$ cố định. Khi $\alpha$ không đổi, mức ``sải bước'' ở pha dò tìm có thể không còn phù hợp theo thời gian, dễ mất đa dạng hoặc quá thô khi cần tinh chỉnh.
+        \item \textbf{Cách MWWO sửa:} thay $\alpha$ cố định bằng $\alpha$ thích nghi theo thế hệ:
+        \begin{equation}
+            \alpha_i = \alpha_{\max} \left( \frac{i_{\text{MGN}} - i_{\text{CGN}} + 1}{i_{\text{MGN}}} \right)^{\gamma}
+        \end{equation}
+
+        
+        \begin{itemize}
+            \item $i_{\text{CGN}}$: chỉ số vòng lặp hiện tại (Current Generation Number).
+            \item $i_{\text{MGN}}$: tổng số vòng lặp tối đa của thuật toán (Maximum Generation Number).
+            \item $\gamma$: tham số điều chỉnh tốc độ giảm của $\alpha$.
+        \end{itemize}
+        \item Cơ chế này giúp dò tìm mạnh ở đầu (exploration) rồi thu hẹp sải bước để khai thác (exploitation) về cuối, giảm nguy cơ kẹt cục bộ trên các hàm đa cực trị.
+        \item Trong thuật toán MWWO, việc cập nhật $\alpha \rightarrow \alpha_i$ được đặt thành bước riêng (Step 4) trước khi lan truyền (propagation).
+    \end{itemize}
+    
+\end{frame}
+
+\begin{frame}
+    \frametitle{Cải tiến chính của MWWO}
+
+    \textbf{2) Kích thước quần thể thích nghi (adaptive population size)}
+    \begin{itemize}
+        \item \textbf{Vấn đề của WWO gốc:} giữ kích thước quần thể cố định qua mọi thế hệ $\rightarrow$ kém linh hoạt, dễ kẹt cực trị cục bộ (premature convergence) khi phải cân bằng dò tìm rộng (exploration) và khai thác sâu (exploitation).
+        \item \textbf{Cách MWWO sửa:} dùng một quy luật tuyến tính giảm dần quy mô quần thể theo số thế hệ:
+        \begin{equation}
+        n = n_{\max} - (n_{\max} - n_{\min}) \cdot \frac{i_{\text{CGN}}}{i_{\text{MGN}}} \quad
+        \end{equation}
+        \item \textbf{Ý nghĩa:} 
+        \begin{enumerate}
+            \item Đầu quá trình $\rightarrow$ quần thể lớn để quét rộng không gian nghiệm.
+            \item Càng về sau $\rightarrow$ quần thể nhỏ để tập trung tinh chỉnh cục bộ.
+        \end{enumerate}
+        \item \textbf{Lợi ích:} (i) cân bằng exploration/exploitation, giảm kẹt cục bộ; (ii) mỗi lần thu nhỏ quần thể thì giảm số lần đánh giá fitness, hạ chi phí tính toán mà vẫn cho nghiệm tốt hơn.
+    \end{itemize}
+
+    \vspace{0.5em}
+    
+\end{frame}
+
+\begin{frame}
+    \frametitle{Kết quả so sánh PI -- WWO -- MWWO}
+
+    \begin{table}[h]
+        \centering
+        \begin{tabular}{lccc}
+            \hline
+            \textbf{Tiêu chí} & \textbf{PI} & \textbf{WWO} & \textbf{MWWO} \\
+            \hline
+            Thời gian thực thi (s)     & 120   & 59    & \textbf{48}    \\
+            Tiêu thụ H$_2$ (g/1000s)   & 50.50 & 41.39 & \textbf{40.81} \\
+            Công suất tải FC (W)       & 1349  & 1580  & \textbf{2300}  \\
+            Hiệu suất tổng (\%)        & 69.32 & 81.51 & \textbf{89.67} \\
+            Stress FC                  & 22.27 & 17.59 & \textbf{12.54} \\
+            SoC pin (\%)               & 70--52 & 70--55 & \textbf{70--59} \\
+            \hline
+        \end{tabular}
+    \end{table}
+
+    \vspace{0.5em}
+    \textbf{Quan sát:}
+    \begin{itemize}
+        \item MWWO vượt trội ở hầu hết tiêu chí: hiệu suất cao nhất, tiết kiệm nhiên liệu hơn, giảm stress thiết bị.
+        \item Cải thiện rõ rệt chất lượng điện năng (PQ) và duy trì SoC pin ở mức an toàn hơn.
+    \end{itemize}
+\end{frame}

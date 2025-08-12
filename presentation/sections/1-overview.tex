@@ -3,10 +3,9 @@
     WWO là một kỹ thuật metaheuristic được phát triển dựa trên quan sát các sóng nước tự nhiên. Kỹ thuật này được liệt kê vào mục trí tuệ bầy đàn tự nhiên (Natural swarm-based) \cite{hussain2019metaheuristic}
     
     \begin{itemize}
-        \item Được giới thiệu lần đầu bởi Yu-Jun Zheng và các cộng sự vào năm 2015 \cite{zheng2015water}
-        \item Mô phỏng hành vi lan truyền của sóng nước
+        \item Được giới thiệu lần đầu bởi Yu-Jun Zheng vào năm 2015 (Water wave optimization: A new nature-inspired metaheuristic, Computers \& Operations Research - Elsevier) \cite{zheng2015water}. Mô phỏng hành vi lan truyền của sóng nước trong mô hình shallow water wave
         \item Ban đầu được áp dụng vào các bài toán tối ưu liên tục, nhưng sau đó được sự quan tâm và chú ý trong việc áp dụng với các bài toán tối ưu tổ hợp
-        \item Năm 2019, các tác giả đã tổng hợp một số kỹ thuật và đánh giá WWO trong các bài toán tối ưu tổ hợp \cite{zheng2019water}
+        \item Năm 2019, Zheng và các cộng sự đã tổng hợp một số kỹ thuật và đánh giá WWO trong các bài toán tối ưu tổ hợp rời rạc \cite{zheng2019water}
     \end{itemize}
 \end{frame}
 
@@ -39,9 +38,9 @@
     Bước sóng của tất cả lời giải $\lambda_{\mathbf{x}}$ được khởi tạo bằng 0.5, sau đó sẽ được điều chỉnh dựa trên độ tốt của lời giải đó $f(\mathbf{x})$ qua các thế hệ. 
     \begin{equation}
         \label{eq:e2}
-        \lambda_\mathbf{x} = \lambda_\mathbf{x}\cdot\alpha^{-(f(x) - f_{min} + \epsilon)/(f_{max} - f_{min} + \epsilon)}
+        \lambda_\mathbf{x} = \lambda_\mathbf{x}\cdot\alpha^{-(f(\mathbf{x}) - f_{min} + \epsilon)/(f_{max} - f_{min} + \epsilon)}
     \end{equation}
-    Trong đó $f_{max}$ và $f_{min}$ là giá trí của lời giải tốt nhất và tệ nhất trong quần thể ở thế hệ hiện tại, $\alpha$ là hệ số suy giảm bước sóng (được đề xuất là 1.0026)\cite{zheng2019water}.
+    Trong đó $f_{max}$ và $f_{min}$ là giá trị của lời giải tốt nhất và tệ nhất trong quần thể ở thế hệ hiện tại, $\alpha$ là hệ số suy giảm bước sóng (được đề xuất là 1.0026)\cite{zheng2019water}.
 \end{frame}
 
 \begin{frame}

@@ -1,0 +1,115 @@
+\begin{frame}
+    \frametitle{Áp dụng WWO trong classic knapsack}
+    \begin{block}{Phát biểu bài toán:}
+        Cho $n$ đồ vật được đánh số từ $1$ đến $n$, trong đó đồ vật thứ $i$ có khối lượng $w_i$ và giá trị $v_i$. 
+        Yêu cầu chọn một tập các đồ vật sao cho tổng khối lượng không vượt quá giới hạn $W$ và tổng giá trị đạt lớn nhất có thể. 
+    \end{block}
+
+    \textbf{Nhược điểm của WWO gốc:}
+        \begin{itemize}
+            \item \textbf{Propagation ngẫu nhiên, không định hướng:} dễ bỏ item giá trị cao hoặc thêm item chất lượng kém, gây nhiễu và chậm hội tụ.
+            \item \textbf{Local search đơn giản:} thiếu các hoán đổi nhiều item $\rightarrow$ dễ kẹt ở nghiệm cục bộ.
+            \item \textbf{Xử lý nghiệm vi phạm kém:} dùng hàm phạt, nhiều bước lãng phí cho nghiệm infeasible.
+            \item \textbf{Thiếu cơ chế đa dạng hoá:} không có chiến lược escape khi hội tụ sớm.
+            \item \textbf{Không tận dụng đặc thù knapsack:} bỏ qua thông tin mật độ giá trị (density) để định hướng chọn/bỏ item.
+        \end{itemize}
+\end{frame}
+
+\begin{frame}
+    \frametitle{Cải tiến 1: Propagation có định hướng theo điểm số}
+    \textbf{Lý do cần cải tiến:}
+    \begin{itemize}
+        \item WWO gốc chỉ \textit{lật ngẫu nhiên k bit} quanh nghiệm hiện tại $\rightarrow$ dễ bỏ item tốt hoặc thêm item tệ $\rightarrow$ lãng phí bước lan truyền.
+        \item Knapsack: density là chỉ số mạnh để chọn/bỏ đúng.
+    \end{itemize}
+    \textbf{Mô tả:}
+    \begin{itemize}
+        \item Cải tiến: tính score cho từng item:
+        \begin{itemize}
+            \item Item chưa chọn: score cao nếu density ($v/w$) lớn + thêm yếu tố giá trị.
+            \item Item đang chọn: score dựa trên nghịch đảo density (density thấp $\rightarrow$ score cao).
+        \end{itemize}
+         \item Chọn \texttt{max\_candidates} item có score cao nhất bằng \textbf{heap} (tìm top-k hiệu quả).
+        \item \textbf{Ngẫu nhiên hóa nhẹ} thứ tự các ứng viên để tránh cứng nhắc và duy trì đa dạng.
+        \item Lật \texttt{num\_changes} item từ danh sách ứng viên.
+        \item Nếu nghiệm vi phạm ràng buộc $\rightarrow$ gọi \texttt{repair\_and\_fill\_solution}.
+   
+    \end{itemize}
+    \textbf{Khắc phục nhược điểm:}
+    \begin{itemize}
+        \item Giảm nhiễu ngẫu nhiên nhưng vẫn giữ một phần ngẫu nhiên để tránh kẹt local optima.
+        \item Tăng xác suất cải thiện $\rightarrow$ hội tụ nhanh, ổn định hơn.
+    \end{itemize}
+\end{frame}
+
+
+\begin{frame}
+    \frametitle{Cải tiến 2: Local search giàu toán tử (1–1, 2–1, 1–2, 2–2)}
+    \textbf{Lý do cần cải tiến:}
+    \begin{itemize}
+        \item LS gốc của WWO đơn giản, dễ kẹt ở local optima.
+        \item Knapsack đôi khi cần bỏ nhiều item nhỏ để thêm item lớn (hoặc ngược lại).
+    \end{itemize}
+    \textbf{Mô tả:}
+    \begin{itemize}
+        \item Chọn \textbf{top-density unselected} (item chưa chọn tốt nhất) và \textbf{worst-density selected} (item đang chọn tệ nhất).
+        \item Thử các hoán đổi:
+        \begin{itemize}
+            \item 1–1: thay 1 xấu bằng 1 tốt.
+            \item 2–1: bỏ 2 xấu, thêm 1 tốt.
+            \item 1–2: bỏ 1 xấu, thêm 2 tốt.
+            \item 2–2: bỏ 2 xấu, thêm 2 tốt.
+        \end{itemize}
+    \end{itemize}
+
+    \textbf{Khắc phục nhược điểm:}
+    \begin{itemize}
+        \item Cho phép nhảy qua rào cản local optima.
+        \item Khám phá không gian nghiệm rộng hơn, vẫn dựa trên density.
+    \end{itemize}
+\end{frame}
+
+
+\begin{frame}
+    \frametitle{Cải tiến 3: Repair-then-fill khi quá tải}
+    \textbf{Lý do cần cải tiến:}
+    \begin{itemize}
+        \item WWO gốc cho MKP dùng hàm phạt: nghiệm infeasible vẫn giữ $\rightarrow$ lãng phí bước tìm kiếm.
+        \item 1D knapsack: repair đơn giản và nhanh.
+    \end{itemize}
+    \textbf{Mô tả:}
+    \begin{itemize}
+        \item Nếu nghiệm vượt capacity:
+        \begin{itemize}
+            \item Bỏ item tệ nhất (density thấp nhất) cho đến khi feasible.
+            \item Lấp đầy bằng item density cao nhất còn lại mà vẫn vừa capacity.
+        \end{itemize}
+    \end{itemize}
+    \textbf{Khắc phục nhược điểm:}
+    \begin{itemize}
+        \item Đảm bảo nghiệm feasible sớm.
+        \item Fitness luôn phản ánh giá trị thật, không ảo do phạt.
+        \item Giảm thời gian “chữa cháy” trong quá trình chạy.
+    \end{itemize}
+\end{frame}
+
+\begin{frame}
+    \frametitle{Cải tiến 4: Đa dạng hoá khi trì trệ}
+    \textbf{Lý do cần cải tiến:}
+    \begin{itemize}
+        \item WWO gốc dễ hội tụ sớm nếu quần thể bị hút vào 1 vùng nghiệm.
+        \item Landscape của COP có nhiều “điểm chết”.
+    \end{itemize}
+    \textbf{Mô tả:}
+    \begin{itemize}
+        \item Dùng biến \texttt{stagnation\_counter} đếm số vòng không cải thiện best.
+        \item Nếu $\ge$ ngưỡng: thay $\sim$20\% cá thể tệ nhất bằng nghiệm seed mới.
+    \end{itemize}
+
+    \textbf{Khắc phục nhược điểm:}
+    \begin{itemize}
+        \item Giữ đa dạng quần thể.
+        \item Cung cấp hướng tìm mới khi bị kẹt.
+        \item Kết hợp propagation định hướng để tìm nghiệm tốt hơn trong thời gian giới hạn.
+    \end{itemize}
+\end{frame}

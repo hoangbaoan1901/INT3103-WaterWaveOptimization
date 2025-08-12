@@ -14,8 +14,6 @@
 \hypersetup{
     unicode=true,
     pdfencoding=auto,
-    pdftitle={Ap dung toi uu song nuoc cho cac bai toan toi uu to hop},
-    pdfauthor={Hoang Bao An, Phan Tien Dat},
     colorlinks=true,
     linkcolor=blue,
     citecolor=blue,
@@ -28,28 +26,59 @@
   open
 }
 
+% Pseudocode
+\usepackage{algorithm}
+\usepackage{algpseudocode}
+
+
 %Information to be included in the title page:
 \title{Áp dụng tối ưu sóng nước cho các bài toán tối ưu tổ hợp}
-\author{Hoàng Bảo An, Phan Tiến Đạt}
-\institute{Đại học Công Nghệ, ĐHQGHN}
-\date{2025}
+\author{Hoàng Bảo An - 22024545, Phan Tiến Đạt - 22024529}
+\institute{Trường Đại học Công Nghệ, Đại học Quốc gia Hà Nội}
+\date{\today}
 
-% Remove bottom navigation bar
-\beamertemplatenavigationsymbolsempty 
+\beamertemplatenavigationsymbolsempty % Remove bottom navigation bar
 
-% Remove 
+\setbeamertemplate{footline}
+{
+  \leavevmode%
+  \hbox{%
+  % \begin{beamercolorbox}[wd=.333333\paperwidth,ht=2.25ex,dp=1ex,center]{author in head/foot}%
+  %   \usebeamerfont{author in head/foot}\insertshortauthor
+  % \end{beamercolorbox}%
+  \begin{beamercolorbox}[wd=.4\paperwidth,ht=2.25ex,dp=1ex,center]{title in head/foot}%
+    \usebeamerfont{title in head/foot}\insertshortinstitute
+  \end{beamercolorbox}%
+  \begin{beamercolorbox}[wd=.6\paperwidth,ht=2.25ex,dp=1ex,right]{date in head/foot}%
+    % --- This is the part that adds page numbers ---
+    \insertframenumber{} / \inserttotalframenumber\hspace*{2ex} 
+  \end{beamercolorbox}}%
+  \vskip0pt%
+}
+
+% Remove Copenhagen theme top navigation
 \setbeamertemplate{headline}{}
 
-% Add ToC on section transition
+% Add ToC on section/subsection transition
 \AtBeginSection[]
 {
-  \begin{frame}<beamer> % <beamer> option prevents this frame from appearing in the ToC
+  \begin{frame}<beamer>
   \frametitle{Mục lục}
-  \tableofcontents[currentsection] % Shows ToC, highlighting the current section
+  % Use hideallsubsections for a clean section-level overview
+  \tableofcontents[currentsection, hideallsubsections] 
   \end{frame}
 }
+
+% Logo
+\titlegraphic{\includegraphics[width=2cm]{images/Logo_HUET.svg.png}\hspace*{10cm}~%
+   \includegraphics[width=2cm]{images/fit.png}
+}
+
+% Replace document icon in ref section to actual number
+\setbeamertemplate{bibliography item}{[\theenumiv]}
+
 \begin{document}
-\logo{\includegraphics[width=0.5cm]{images/Logo_HUET.svg.png}}
+% \logo{\includegraphics[width=0.05\linewidth]{images/Logo_HUET.svg.png}}
 \frame{\titlepage}
 
 \section{Tổng quan}
@@ -64,15 +93,17 @@
 \section{Áp dụng trong classic knapsack}
 \include{sections/4-classicknap}
 
+\section{Bài báo liên quan \& cải tiến}
+\include{sections/5-relatedpaper}
 \section{Tổng kết}
-\include{sections/5-conclusion}
+\include{sections/6-conclusion}
 
 
 % Bibliography section
 \section{Tài liệu tham khảo}
 \begin{frame}[allowframebreaks]
     \frametitle{Tài liệu tham khảo}
-    \bibliographystyle{plain}
+    \bibliographystyle{unsrt}
     \bibliography{refs}
 \end{frame}
 
